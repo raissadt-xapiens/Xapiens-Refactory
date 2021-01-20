@@ -56,8 +56,8 @@ participant2.call();
 
 /* Constructor Function */
 // (+) Can define and create a single or more object with one function.
-// (+) More simple for its code
-// (-) 
+// (+) More simple for its code because it will excecute the constructor code.
+// (-) Set the prototype to the specified type only.
 
 function Attender(title, firstName, lastName, arrivalTime) {
     this.title = title;
@@ -80,8 +80,8 @@ participant2.call();
 
 
 /* Object Create */
-// (+)
-// (-)
+// (+) Set the prototype to be the one passed as the first parameter.
+// (-) More complicate for its code because it will not excecute the constructor code.
 
 const call = {
     title: function() {
@@ -99,7 +99,7 @@ const call = {
 }
 
 function Attender(title, firstName, lastName, arrivalTime) {
-    let participant = Object.create(call);
+    let participant = Object.create({});
     participant.title = title;
     participant.firstName = firstName;
     participant.lastName = lastName;
