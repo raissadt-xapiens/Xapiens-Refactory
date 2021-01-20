@@ -110,10 +110,7 @@ function Attender(title, firstName, lastName, arrivalTime) {
 let participant1 = Attender('Mr.', 'Frederick', 'Brown', 9);
 let participant2 = Attender('Mrs.', 'Emma', 'Winsley', 10);
 
-
-
-
-
+// ----------------------
 
 Attender = {
     call: function() {
