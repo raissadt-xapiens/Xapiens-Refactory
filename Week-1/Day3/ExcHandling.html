@@ -23,6 +23,8 @@
                     if (x < 2) throw "too low ;D";
                 } catch (err) {
                     message.innerHTML = "It is " + err;
+                } finally {
+                    document.getElementById("demo").value = "";
                 }
             }
         </script>
