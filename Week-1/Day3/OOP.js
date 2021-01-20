@@ -99,7 +99,7 @@ const call = {
 }
 
 function Attender(title, firstName, lastName, arrivalTime) {
-    let participant = Object.create({});
+    let participant = Object.create(Attender);
     participant.title = title;
     participant.firstName = firstName;
     participant.lastName = lastName;
@@ -109,3 +109,22 @@ function Attender(title, firstName, lastName, arrivalTime) {
 }
 let participant1 = Attender('Mr.', 'Frederick', 'Brown', 9);
 let participant2 = Attender('Mrs.', 'Emma', 'Winsley', 10);
+
+
+
+
+
+
+Attender = {
+    call: function() {
+        return this.title + " " + this.firstName + " " + this.lastName + " " + "will attend The Grand Seminar at " + this.arrivalTime;
+    }
+}
+var participant = Object.create(Attender)
+console.log(participant);
+participant.title = 'Mr.';
+participant.firstName = 'Frederick';
+participant.lastName = 'Brown';
+participant.arrivalTime = 9;
+
+participant.call();
