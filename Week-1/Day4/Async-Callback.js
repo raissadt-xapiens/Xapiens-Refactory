@@ -6,27 +6,27 @@ function randomInt(min, max) {
 function cloud(callback) {
     setTimeout(
         function() {
-            console.log(`Function save cloud dengan delay ${randomInt} ms.`);
+            console.log('Function save cloud dengan delay ' + Math.random() + ' ms.');
             callback()
-        }, xxxxxx
+        }, 1000
     )
 }
 
 function notif(callback) {
     setTimeout(
         function() {
-            console.log(`Function send notif dengan delay ${randomInt} ms.`);
+            console.log('Function send notif dengan delay ' + Math.random() + ' ms.');
             callback()
-        }, xxxxx
+        }, 1000
     )
 }
 
 function news(callback) {
     setTimeout(
         function() {
-            console.log(`Function fetch news dengan delay ${randomInt} ms.`);
+            console.log('Function fetch news dengan delay ' + Math.random() + ' ms.');
             callback()
-        }, xxxxx
+        }, 1000
     )
 }
 
