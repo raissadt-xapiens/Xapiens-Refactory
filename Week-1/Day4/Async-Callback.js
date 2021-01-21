@@ -3,7 +3,8 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function cloud(callback) {
+//First function//
+function cloud(callback, err) {
     setTimeout(
         function() {
             console.log('Function save cloud dengan delay ' + Math.random() + ' ms.');
@@ -11,8 +12,10 @@ function cloud(callback) {
         }, 1000
     )
 }
+cloud();
 
-function notif(callback) {
+//Second function//
+function notif(callback, err) {
     setTimeout(
         function() {
             console.log('Function send notif dengan delay ' + Math.random() + ' ms.');
@@ -20,8 +23,10 @@ function notif(callback) {
         }, 1000
     )
 }
+notif();
 
-function news(callback) {
+//Third function//
+function news(callback, err) {
     setTimeout(
         function() {
             console.log('Function fetch news dengan delay ' + Math.random() + ' ms.');
@@ -29,7 +34,4 @@ function news(callback) {
         }, 1000
     )
 }
-
-cloud();
-notif();
 news();
