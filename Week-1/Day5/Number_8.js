@@ -17,7 +17,7 @@ function dataType(value) {
 
 
 /* 2 */
-/* Object, String, Number, Array */
+/* Object, String, Array, Number */
 Object.prototype.toString.call([]);
 Object.prototype.toString.call(new String('' || ""));
 Object.prototype.toString.call(new Boolean(true));
@@ -36,3 +36,28 @@ function dataType(value) {
 dataType(["fruit", "vegetable"]); // 'array'
 dataType({ "hello": "world" }); // 'string'
 dataType(2345); // 'number'
+
+
+/* 3 */
+/* Object, String, Array, Number, Integer, Float, Octadecimal, Hexadecimal*/
+function dataType(x) {
+    if (typeof(x) === 'string') {
+        console.log('String');
+    } else if (typeof(x) === []) {
+        console.log('Array');
+    } else if (typeof(x) === 'object') {
+        console.log('Object');
+    } else if (typeof(x) === parseInt()) {
+        console.log('Integer');
+    } else if (typeof(x) === parseFloat()) {
+        console.log('Float');
+    } else if (typeof(x) !== parseInt() && typeof(x) !== parseFloat()) {
+        console.log('Number');
+    } else if (typeof(x) === x % 8 === 0) {
+        console.log('Octadecimal');
+    } else if (typeof(x) === '0x'.concat((x))) {
+        console.log('Hexadecimal');
+    } else {
+        console.log('Undefined');
+    }
+}
