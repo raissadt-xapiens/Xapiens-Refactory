@@ -1,5 +1,5 @@
 var str = prompt("Input value");
-console.log(str + (str.split(/\s/).reverse().join(" ")));
+console.log(str + str.split(/\s/).reverse().join(" "));
 
 
 var str = "saya ingin makan nasi goreng";
