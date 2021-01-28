@@ -18,6 +18,7 @@ export default function Introduction() {
                 </div>
                 <br />
                 <br />
+                <br />
                 <div class="d-none d-lg-block" style={{position:'absolute',zIndex:6,left:430,top:620, width:250,height:250,backgroundColor:'#08236A',borderRadius:200}}></div>
                 <div className="col-lg-3">
                     <div className="border-top mt-4" style={{marginLeft:60}}></div>
