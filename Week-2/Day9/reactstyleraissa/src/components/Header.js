@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/Header.css';
 import '../assets/css/bootstrap.css';
 import img1 from '../assets/img/background/code.jpg';
+// import img2 from '../assets/img/background/computer.jpg';
 
 
 export default function Headers() {
@@ -32,14 +33,26 @@ export default function Headers() {
                     </div>
                 </nav>
         <div className="card-body">
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                 </ol>
             <div className="carousel-inner">
             <div className="carousel-item active">
-                <img className="d-block w-100" style={{height:590}} src={img1} alt="First slide"/>
+                <img className="d-block w-100" style={{height:590, width: '100%'}} src={img1} alt="First slide"/>
             </div>
+            {/* <div className="carousel-item">
+                <img className="d-block w-100" style={{height:650, width: '100%'}} src={img2} alt="Second slide"/>
+            </div> */}
             </div>
+            {/* <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a> */}
+            
         </div>
         </div>
 

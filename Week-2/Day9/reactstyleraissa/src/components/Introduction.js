@@ -8,7 +8,7 @@ export default function Introduction() {
         <div className="container">
             <div className="row mb-3">
                 <div className="col">
-                    <br /><br /><br /><br /><br />>
+                    <br /><br /><br /><br /><br />
                     {/* <h3 style={{fontFamily:'Montserrat',fontWeight:'bold',fontSize:42,color:'white'}}>#Profile</h3> */}
                 </div>
             </div>
@@ -16,6 +16,8 @@ export default function Introduction() {
                 <div className="col-lg-4">
                     {/* <p style={{position:'relative',zIndex:6,fontFamily:'Montserrat',fontWeight:'bold',color:'white',fontSize:45,letterSpacing:6}}>Let's Join Us</p> */}
                 </div>
+                <br />
+                <br />
                 <div class="d-none d-lg-block" style={{position:'absolute',zIndex:6,left:430,top:620, width:250,height:250,backgroundColor:'#08236A',borderRadius:200}}></div>
                 <div className="col-lg-3">
                     <div className="border-top mt-4" style={{marginLeft:60}}></div>
