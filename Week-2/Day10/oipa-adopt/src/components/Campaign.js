@@ -9,8 +9,8 @@ function Campaign() {
     return (
         <div>
             <Container
-                className="themed-container"
-                fluid={true}
+                // className="themed-container"
+                // fluid={true}
                 style={{
                     height: "650px",
                     backgroundColor: "white"
@@ -41,6 +41,7 @@ function Campaign() {
                 >
                     Help the OIPA Put a Stop to Animal Cruelty
                 </h1>
+                <br/>
                 <Button
                     className="donation"
                     onCLick="#"

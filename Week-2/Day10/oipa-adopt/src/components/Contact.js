@@ -34,8 +34,11 @@ function Contact() {
                     <Col>
                         <h2>Social Media</h2>
                         <img className="socmed" src={Socmed1} alt="Youtube" />
+                        <br/>
                         <img className="socmed" src={Socmed2} alt="Facebook" />
+                        <br/>
                         <img className="socmed" src={Socmed3} alt="Instagram" />
+                        <br/>
                         <img className="socmed" src={Socmed4} alt="Twitter" />
                     </Col>
                     <Col>

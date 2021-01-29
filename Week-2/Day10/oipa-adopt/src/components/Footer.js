@@ -1,9 +1,15 @@
 import React from 'react';
+import '../assets/styles/Footer.css';
 
 const Footer = () => {
     return (
         <div>
-            <h6>Copyright</h6>
+            <hr/>
+            <h6
+                className="ending"
+            >
+                OIPA &copy; Copyright - {new Date().getFullYear()}.
+            </h6>
         </div>
     )
 }
