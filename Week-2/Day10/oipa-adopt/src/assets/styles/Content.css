@@ -32,14 +32,22 @@
     text-align: center;
     margin: auto;
 }
-/* .line {
+.line {
     border-color: 1px solid black;
     line-height: 75px;
-} */
+}
 .donation {
     color: black;
     background-color: lightcoral;
     font-size: 20px;
     align-items: center;
     justify-content: center;
+}
+
+
+
+/* Contact */
+.socmed {
+    width: 35px;
+    height: 35px
 }
