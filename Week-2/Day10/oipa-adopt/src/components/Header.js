@@ -19,12 +19,14 @@ const Header = (props) => {
         <div>
             <Navbar
                 className="navigation"
-                lightexpand="lg">
+                light 
+                expand="lg">
                 <NavbarBrand
                     className="mr-auto"
                 >
                     <h2
                         style={{
+                            color: 'black',
                             fontStyle: "italic",
                             marginLeft: "10px"
                         }}
