@@ -8,7 +8,7 @@ const Footer = () => {
             <h6
                 className="ending"
             >
-                OIPA &copy; Copyright - {new Date().getFullYear()}.
+                Copyright &copy; {new Date().getFullYear()} - OIPA. All Rights Reserved.
             </h6>
         </div>
     )
