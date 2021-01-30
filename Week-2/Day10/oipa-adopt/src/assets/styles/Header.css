@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'SimSun-ExtB';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: local('SimSun-ExtB'), url('simsunb.woff') format('woff');
+    }
+
 .navigation {
+    font-family: 'SimSun-ExtB';
     background-color: lightcoral;
     position: fixed;
     z-index: 100;
@@ -8,7 +16,7 @@
 
 .main-link {
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'SimSun-ExtB';
     font-weight: 500;
     font-size: 20px;
 }

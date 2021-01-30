@@ -21,8 +21,15 @@ function Contact() {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Contact</h2>
-                        <h3>Headquarters:
+                        <h2
+                            className="info"
+                        >
+                            Contact
+                        </h2>
+                        <h3
+                            className="office"
+                        >
+                            Headquarters:
                             <br/>
                             San Battista 13 Street - 25007 Cventry (London, UK)
                             <br/>
@@ -32,7 +39,11 @@ function Contact() {
                         </h3>
                     </Col>
                     <Col>
-                        <h2>Social Media</h2>
+                        <h2
+                            className="info"
+                        >
+                            Social Media
+                        </h2>
                         <img className="socmed" src={Socmed1} alt="Youtube" />
                         <br/>
                         <img className="socmed" src={Socmed2} alt="Facebook" />
@@ -42,8 +53,14 @@ function Contact() {
                         <img className="socmed" src={Socmed4} alt="Twitter" />
                     </Col>
                     <Col>
-                        <h2>Sign for Newsletter</h2>
-                        <Form>
+                        <h2
+                            className="info"
+                        >
+                            Sign for Newsletter
+                        </h2>
+                        <Form
+                            className="newsletter"
+                        >
                             <FormGroup>
                                 <Label for="name">Your Name (required)*</Label>
                                 <Input type="text" name="name" id="name" placeholder="write your name.."></Input>

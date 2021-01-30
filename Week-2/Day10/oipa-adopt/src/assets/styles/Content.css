@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'SimSun-ExtB';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('simsunb.woff');
+    }
+
+
 /* Introduction */
 .jumbotron {
     width: 100%;
@@ -8,16 +16,19 @@
 
 /* Profile */
 .intro {
+    font-family: 'SimSun-ExtB';
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 .about {
+    font-family: 'SimSun-ExtB';
     font-size: 30px;
     text-align: center;
     padding-bottom: 15px;
 }
 .description {
+    font-family: 'SimSun-ExtB';
     font-size: 20px;
     text-align: justify;
     letter-spacing: 0.1em;
@@ -29,6 +40,7 @@
 
 /* Campaign */
 .project {
+    font-family: 'SimSun-ExtB';
     text-align: center;
     margin: auto;
 }
@@ -39,6 +51,7 @@
 .donation {
     color: black;
     background-color: lightcoral;
+    font-family: 'SimSun-ExtB';
     font-size: 20px;
     justify-content: center;
     margin: auto;
@@ -47,9 +60,20 @@
 
 
 /* Contact */
+.info {
+    font-family: 'SimSun-ExtB';
+}
+.office {
+    font-family: 'SimSun-ExtB';
+}
 .socmed {
     width: 40px;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.newsletter {
+    font-family: 'SimSun-ExtB';
+}
+
+
