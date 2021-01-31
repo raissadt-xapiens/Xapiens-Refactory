@@ -45,7 +45,7 @@ function Profile() {
                         <h3
                             className="about"
                         >
-                            Around The World
+                            The Campaigns
                         </h3>
                         <h6
                             className="description"
