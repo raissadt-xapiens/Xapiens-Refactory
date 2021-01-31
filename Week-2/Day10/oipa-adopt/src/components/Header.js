@@ -25,11 +25,7 @@ const Header = (props) => {
                     className="mr-auto"
                 >
                     <h2
-                        style={{
-                            color: 'black',
-                            fontStyle: "italic",
-                            marginLeft: "10px"
-                        }}
+                        className="oipa"
                     >
                         OIPA
                     </h2>
@@ -42,7 +38,6 @@ const Header = (props) => {
                     <Nav
                         className="ml-auto"
                         navbar
-                        // style={{marginRight: "10px"}}
                     >
                         <NavItem>
                             <NavLink

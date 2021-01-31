@@ -10,11 +10,11 @@ function Profile() {
     return (
         <div>
             <Container
-                // className="themed-container"
-                // fluid={true}
+                className="themed-container"
+                fluid={true}
                 style={{
-                    height: "750px",
-                    // backgroundColor: "black",
+                    height: "975px",
+                    backgroundColor: "black",
                     paddingTop: "30px",
                     marginTop: "-30px"
                 }}

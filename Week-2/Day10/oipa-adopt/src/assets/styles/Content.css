@@ -14,29 +14,38 @@
 
 .carousel-item > img {
     width: 100%;
-    height: 900px;
+    /* height: 900px; */
+    height: auto;
 }
 
 /* Profile */
 .intro {
+    color: #B3A593;
     font-family: 'SimSun-ExtB';
+    font-size: 60px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-top: 50px;
 }
 .about {
+    color: #FFFFFF;
     font-family: 'SimSun-ExtB';
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-left: 40px;
     padding-bottom: 15px;
 }
 .description {
+    color: #FFFFFF;
     font-family: 'SimSun-ExtB';
-    font-size: 20px;
-    text-align: justify;
-    letter-spacing: 0.1em;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 

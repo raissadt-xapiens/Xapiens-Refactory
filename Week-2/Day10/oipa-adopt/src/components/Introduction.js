@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import '../assets/styles/Content.css';
 import Slider1 from '../assets/images/animal.jpeg';
-import Slider2 from '../assets/images/adoption.jpeg';
+import Slider2 from '../assets/images/jumbotron.jpeg';
 import Slider3 from '../assets/images/welfare.jpeg';
 
 
