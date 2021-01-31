@@ -18,7 +18,17 @@ import Socmed4 from '../assets/images/twitter.png';
 function Contact() {
     return (
         <div>
-            <Container>
+            <Container
+                className="themed-container"
+                fluid={true}
+                style={{
+                    backgroundColor: "#AC9371",
+                    opacity: "0.34",
+                    paddingLeft: "200px",
+                    paddingRight: "200px",
+                    height: "450px"
+                }}
+            >
                 <Row>
                     <Col>
                         <h2
@@ -31,7 +41,8 @@ function Contact() {
                         >
                             Headquarters:
                             <br/>
-                            San Battista 13 Street - 25007 Cventry (London, UK)
+                            San Battista 13 Street<br/>- 25007 Coventry<br/>(London, UK)
+                            <br/>
                             <br/>
                             Tel. +24 02 6327777
                             <br/>
@@ -44,13 +55,10 @@ function Contact() {
                         >
                             Social Media
                         </h2>
-                        <img className="socmed" src={Socmed1} alt="Youtube" />
-                        <br/>
-                        <img className="socmed" src={Socmed2} alt="Facebook" />
-                        <br/>
-                        <img className="socmed" src={Socmed3} alt="Instagram" />
-                        <br/>
-                        <img className="socmed" src={Socmed4} alt="Twitter" />
+                        <p className="socmed-1"><img className="socmed-2" src={Socmed1} alt="Youtube" /> OIPA Animal</p>
+                        <p className="socmed-1"><img className="socmed-2" src={Socmed2} alt="Facebook" /> OIPA Adoption</p>
+                        <p className="socmed-1"><img className="socmed-2" src={Socmed3} alt="Instagram" /> @oipa_adopt</p>
+                        <p className="socmed-1"><img className="socmed-2" src={Socmed4} alt="Twitter" /> @oipa_adopt</p>
                     </Col>
                     <Col>
                         <h2
@@ -69,7 +77,14 @@ function Contact() {
                                 <Label for="email">Your Email (required)*</Label>
                                 <Input type="email" name="email" id="email" placeholder="write your email.."></Input>
                             </FormGroup>
-                            <Button>Submit</Button>
+                            <FormGroup check>
+                                <Label check>
+                                    <Input type="checkbox" />{' '}
+                                     Accept Privacy & Policy
+                                </Label>
+                            </FormGroup>
+                            <br/>
+                            <Button className="submit">Submit</Button>
                         </Form>
                     </Col>
                 </Row>

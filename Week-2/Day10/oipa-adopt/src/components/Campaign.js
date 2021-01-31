@@ -12,7 +12,7 @@ function Campaign() {
                 // className="themed-container"
                 // fluid={true}
                 style={{
-                    height: "650px",
+                    height: "850px",
                     backgroundColor: "white"
                 }}
             >
@@ -35,7 +35,6 @@ function Campaign() {
                 </h1>
                 <br/>
                 <br/>
-                <br/>
                 <h1
                     className="project"
                 >
@@ -44,7 +43,22 @@ function Campaign() {
                 <br/>
                 <Button
                     className="donation"
-                    onCLick="#"
+                    style={{
+                        color: "black",
+                        backgroundColor: "#AC9371",
+                        fontFamily: 'SimSun-ExtB',
+                        height: "80px",
+                        width: "250px",
+                        fontSize: "40px",
+                        fontWeight: "700",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        marginTop: "50px",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        display: "flex",
+                        borderRadius: "20px"
+                    }}
                 >
                     DONATE
                 </Button>
