@@ -12,7 +12,7 @@ function Introduction() {
     return (
         <div>
             <img
-                className="jumbotron"
+                className="slider"
                 src={Jumbotron}
                 alt="My Cat"
             />
@@ -22,8 +22,6 @@ function Introduction() {
                 style={{
                     height: "975px",
                     backgroundColor: "white",
-                    paddingTop: "30px",
-                    marginTop: "-30px"
                 }}
             >
                 <h1
