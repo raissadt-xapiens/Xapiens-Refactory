@@ -89,7 +89,7 @@ const Header = (props) => {
             <div>
                 <Modal isOpen={modal} toggle={toggle2} className="pop-modal">
                     <ModalHeader toggle={toggle2} className="modal-title">Sign In</ModalHeader>
-                    <ModalBody className="modal-body">
+                    <ModalBody>
                         <Form className="signup-signin">
                             <Col>
                                 <h5 className="modal-sub">
@@ -110,9 +110,11 @@ const Header = (props) => {
                                 </FormGroup>
                             </Col>
                         </Form>
+                        <br/>
+                        <a href="#" className="modal-link">Don't have an account?</a>
                     </ModalBody>
                     <ModalFooter>
-                        <Button onClick="submit">Submit</Button>
+                        <Button onClick="submit" className="modal-button">Submit</Button>
                     </ModalFooter>
                 </Modal>
             </div>

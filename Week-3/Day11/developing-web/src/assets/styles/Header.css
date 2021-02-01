@@ -43,3 +43,21 @@
     font-weight: bold;
     margin-bottom: -10px;
 }
+.modal-link {
+    color: black;
+    font-size: larger;
+    font-style: italic;
+}
+.modal-link:hover {
+    color: #B3A593;
+}
+.modal-button {
+    background-color:  #B3A593;
+    width: 100px;
+    height: 40px;
+    color: black;
+}
+.modal-button:hover {
+    background-color: white;
+    color: black;
+}
