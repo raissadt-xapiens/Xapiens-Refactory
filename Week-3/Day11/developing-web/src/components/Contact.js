@@ -73,11 +73,11 @@ function Contact() {
                         >
                             <FormGroup>
                                 <Label for="name">Your Name (required)*</Label>
-                                <Input type="text" name="name" id="name" placeholder="write your name.."></Input>
+                                <Input type="text" name="name" id="name" placeholder="Write your name.."></Input>
                             </FormGroup>
                             <FormGroup>
                                 <Label for="email">Your Email (required)*</Label>
-                                <Input type="email" name="email" id="email" placeholder="write your email.."></Input>
+                                <Input type="email" name="email" id="email" placeholder="Write your email.."></Input>
                             </FormGroup>
                             <FormGroup check>
                                 <Label check>

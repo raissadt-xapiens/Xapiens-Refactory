@@ -47,6 +47,7 @@
     color: black;
     font-size: larger;
     font-style: italic;
+    cursor: pointer;
 }
 .modal-link:hover {
     color: #B3A593;
