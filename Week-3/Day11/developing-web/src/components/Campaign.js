@@ -12,7 +12,7 @@ function Campaign() {
                 // className="themed-container"
                 // fluid={true}
                 style={{
-                    height: "850px",
+                    height: "auto",
                     backgroundColor: "white"
                 }}
             >
@@ -62,6 +62,8 @@ function Campaign() {
                 >
                     DONATE
                 </Button>
+                <br/>
+                <br />
             </Container>
         </div>
     )

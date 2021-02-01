@@ -9,6 +9,7 @@
 /* Introduction */
 .slider {
     width: 100%;
+    height: auto;
 }
 .intro {
     color: #B3A593;
@@ -49,7 +50,7 @@
     font-family: 'SimSun-ExtB';
     text-align: center;
     margin: auto;
-    padding-top: 75px;
+    padding-top: 125px;
 }
 .line {
     color: #B3A593;
@@ -109,3 +110,15 @@
     background-color: #AC9371!important;
     font-size: 30px;
 } */
+
+
+
+@media screen and (max-width: 720px) {
+    .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
+    .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
+}
+
+@media screen and (max-width: 600px) {
+    .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
+    .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
+}

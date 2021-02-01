@@ -26,7 +26,7 @@ function Contact() {
                     opacity: "0.34",
                     paddingLeft: "200px",
                     paddingRight: "200px",
-                    height: "450px"
+                    height: "auto"
                 }}
             >
                 <Row
@@ -88,6 +88,7 @@ function Contact() {
                             <br/>
                             <Button className="submit">Submit</Button>
                         </Form>
+                        <br/><br/>
                     </Col>
                 </Row>
             </Container>

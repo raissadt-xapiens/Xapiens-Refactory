@@ -20,7 +20,7 @@ function Introduction() {
                 className="themed-container"
                 fluid={true}
                 style={{
-                    height: "975px",
+                    height: "auto",
                     backgroundColor: "white",
                 }}
             >
