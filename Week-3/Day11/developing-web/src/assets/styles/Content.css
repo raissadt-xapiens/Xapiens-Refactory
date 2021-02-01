@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'SimSun-ExtB';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('simsunb.woff');
+    }
+
+
+/* Introduction */
+.jumbotron {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.intro {
+    color: #B3A593;
+    font-family: 'SimSun-ExtB';
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.about {
+    color: #B3A593;
+    font-family: 'SimSun-ExtB';
+    font-size: 40px;
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+}
+.description {
+    color: #B3A593;
+    font-family: 'SimSun-ExtB';
+    font-size: 28px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+/* Campaign */
+.project {
+    color: #B3A593;
+    font-weight: 700;
+    font-style: bold;
+    font-family: 'SimSun-ExtB';
+    text-align: center;
+    margin: auto;
+    padding-top: 75px;
+}
+.line {
+    color: #B3A593;
+    border-color: 1px solid black;
+    line-height: 65px;
+}
+.donation {
+    color: black!important;
+    background-color: #AC9371!important;
+    font-family: 'SimSun-ExtB';
+    height: 60px;
+    width: 150px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex!important;
+    border-radius: 30px;
+}
+
+
+
+/* Contact */
+.info {
+    color: white;
+    font-family: 'SimSun-ExtB';
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 5px 5px 20px #00000029;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.office {
+    /* color: #AC9371!important; */
+    font-family: 'SimSun-ExtB';
+    font-weight: 700;
+    line-height: 40px;
+}
+.socmed-1 {
+    font-family: 'SimSun-ExtB';
+    font-size: 25px;
+    font-weight: 700;
+}
+.socmed-2 {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.newsletter {
+    font-family: 'SimSun-ExtB';
+    font-size: 20px;
+    font-weight: 700;
+}
+/* .submit {
+    background-color: #AC9371!important;
+    font-size: 30px;
+} */

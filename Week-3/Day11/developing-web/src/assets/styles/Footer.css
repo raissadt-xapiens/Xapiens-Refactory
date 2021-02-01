@@ -1,0 +1,14 @@
+/* @font-face {
+    font-family: 'SimSun-ExtB';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SimSun-ExtB'), url('simsunb.woff') format('woff');
+    } */
+
+
+.ending {
+    font-family: 'SimSun-ExtB';
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+}
