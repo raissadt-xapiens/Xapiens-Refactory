@@ -18,6 +18,8 @@ import {
     Input,
     Col
 } from 'reactstrap';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 import '../assets/styles/Header.css';
 
 const Header = (props) => {
@@ -25,6 +27,7 @@ const Header = (props) => {
     const [modal, setModal] = useState(false);
     const [nestedModal, setNestedModal] = useState(false);
     const [closeAll, setCloseAll] = useState(false);
+    const [value, setValue] = useState();
 
     const toggle1 = () => setIsOpen(!isOpen);
     const toggle2 = () => setModal(!modal);
@@ -151,6 +154,25 @@ const Header = (props) => {
                                         <FormGroup>
                                             <Label for="password" type="password" />
                                             <Input type="password" id="examplePassword" placeholder="Put your password" /> 
+                                        </FormGroup>
+                                        </Col>
+                                        <Col>
+                                            <h5 className="modal-sub">
+                                                Phone Number:
+                                            </h5>
+                                        <FormGroup>
+                                            <Label for="phone" type="number" />
+                                            <PhoneInput value={value} onChange={setValue} placeholder="Put your phone number" />
+                                            {/* <Input type="number" pattern="[0-9]+" id="examplePhoNum" placeholder="Put your phone number" />  */}
+                                        </FormGroup>
+                                        </Col>
+                                        <Col>
+                                            <h5 className="modal-sub">
+                                                Address:
+                                            </h5>
+                                        <FormGroup>
+                                            <Label for="address" type="text" />
+                                            <Input type="text" id="exampleAddress" placeholder="Put your address" />
                                         </FormGroup>
                                         </Col>
                                     </Form>
