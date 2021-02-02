@@ -90,13 +90,13 @@ class SignIn extends React.Component {
           <form onSubmit={this.handleSubmit} required>
             <div className='email'>
               <label htmlFor="email">Email</label>
-              <input type='email' name='email' required onChange={this.handleChange} />
+              <input type='email' name='email' onChange={this.handleChange} required />
               {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
-              <input type='password' name='password' required onChange={this.handleChange} />
+              <input type='password' name='password' onChange={this.handleChange} required />
               {errors.password.length > 0 && 
                 <span className='error'>{errors.password}</span>}
             </div>
