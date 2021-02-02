@@ -87,6 +87,7 @@
 .office {
     /* color: #AC9371!important; */
     font-family: 'SimSun-ExtB';
+    font-size: 30px;
     font-weight: 700;
     line-height: 40px;
 }
@@ -116,9 +117,15 @@
 @media screen and (max-width: 720px) {
     .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
     .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
+    /* .info {font-size: 35px; margin-left: -50px; margin-right: -50px;}
+    .office {font-size: 25x; margin-left: -50px; margin-right: -50px;}
+    .socmed-1 {margin-left: -50px; margin-right: -50px;}  */
 }
 
 @media screen and (max-width: 600px) {
     .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
     .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
+    /* .info {font-size: 25px; padding-left: 50px; padding-right: 50px;}
+    .office {font-size: 20px; padding-left: 50px; padding-right: 50px;}
+    .socmed-1 {padding-left: 50px; padding-right: 50px;} */
 }
