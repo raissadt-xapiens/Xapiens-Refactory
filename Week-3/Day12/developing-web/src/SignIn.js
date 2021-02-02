@@ -16,8 +16,8 @@ class SignIn extends React.Component {
     super(props);
 
     this.state = {
-      email: null,
-      password: null,
+      email: '',
+      password: '',
       errors: {
         email: '',
         password: '',
@@ -54,52 +54,30 @@ class SignIn extends React.Component {
     this.setState({errors, [name]: value});
   }
 
+
   // handleSubmit = (event) => {
   //   event.preventDefault();
-  //   if (event == "")  {
-  //     alert('Please fill all field!');
-  //   } else if (validateForm(this.state.errors).event === "") {
+  //   if (this.state.email === null || this.state.email === "") {
+  //     alert('Please fill the email');
+  //   } else if (this.state.password === null || this.state.password === "") {
+  //     alert('Please fill password');
+  //   } else if (validateForm(this.state.errors)) {
   //     alert('Sign In success!');
   //   } else {
-  //     alert('Sign In error!');
+  //       alert('Sign In error!');
   //   }
   // }
 
-
-
-
   handleSubmit = (event) => {
     event.preventDefault();
-    if (this.state.errors.email === "" && this.state.errors.password === "") {
+    if (this.state.email === '' && this.state.password === '') {
+      alert('Please fill the blank!');
+    } else if (validateForm(this.state.errors)) {
       alert('Sign In success!');
-    // } else if (event == "") {
-    //   alert('Please fill all field!');
     } else {
       alert('Sign In error!');
     }
   }
-
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   if (validateForm(this.state.errors)) {
-  //     alert('Sign In success!');
-  //   } else if (event == "") {
-  //     alert('Please fill all field!');
-  //   } else {
-  //     alert('Sign In error!');
-  //   }
-  // }
-
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   if (event == null && event == "") {
-  //     alert('Sign In success!');
-  //   } else if (validateForm(this.state.errors)) {
-  //     alert('Sign In error!');
-  //   } else {
-  //     alert ('Please fill all field!');
-  //   }
-  // }
 
 
 

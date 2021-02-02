@@ -17,11 +17,11 @@ class Signup extends React.Component {
     super(props);
 
     this.state = {
-      fullName: null,
-      email: null,
-      password: null,
-      phoneNumber: null,
-      address: null,
+      fullName: '',
+      email: '',
+      password: '',
+      phoneNumber: '',
+      address: '',
       errors: {
         fullName: '',
         email: '',
@@ -82,16 +82,28 @@ class Signup extends React.Component {
     this.setState({errors, [name]: value});
   }
 
+
   handleSubmit = (event) => {
     event.preventDefault();
-    if (validateForm(this.state.errors)) {
-      alert('Valid Form!');
-    } else if (event == null && event == "") {
-      alert('Please fill all field!'); 
+    if (this.state.fullName === '' && this.state.email === '' && this.state.password === '' && this.state.phoneNumber === '' && this.state.address === '') {
+      alert('Please fill the blank!');
+    } else if (validateForm(this.state.errors)) {
+      alert('Sign In success!');
     } else {
-      alert('Invalid Form!');
+      alert('Sign In error');
     }
   }
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (validateForm(this.state.errors)) {
+  //     alert('Valid Form!');
+  //   } else if (event == null && event == "") {
+  //     alert('Please fill all field!'); 
+  //   } else {
+  //     alert('Invalid Form!');
+  //   }
+  // }
 
 
   render() {
@@ -100,7 +112,7 @@ class Signup extends React.Component {
       <div className='wrapper'>
         <div className='form-wrapper'>
           <h2>Sign Up</h2>
-          <form onSubmit={this.handleSubmit} noValidate>
+          <form onSubmit={this.handleSubmit} required>
             <div className='fullName'>
               <label htmlFor="fullName">Full Name</label>
               <input type='text' name='fullName' onChange={this.handleChange} required />
