@@ -66,10 +66,10 @@ class SignIn extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if(validateForm(this.state.errors)) {
-      console.info('Valid Form')
-    }else{
-      console.error('Invalid Form')
+    if (validateForm(this.state.errors)) {
+      alert('Sign In success!');
+    } else{
+      alert('Sign In error!');
     }
   }
 
@@ -93,7 +93,7 @@ class SignIn extends React.Component {
                 <span className='error'>{errors.password}</span>}
             </div>
             <div className='submit'>
-              <button>Create</button>
+              <button>Submit</button>
             </div>
           </form>
         </div>

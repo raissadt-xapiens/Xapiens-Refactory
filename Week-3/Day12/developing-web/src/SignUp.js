@@ -93,9 +93,9 @@ class Signup extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     if(validateForm(this.state.errors)) {
-      console.info('Valid Form')
+      alert('Valid Form!');
     }else{
-      console.error('Invalid Form')
+      alert('Invalid Form!');
     }
   }
 
