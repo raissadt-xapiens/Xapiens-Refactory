@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exception Handling</title>
+</head>
+
+<body>
+    <p>Input a number between 2 and 5:</h2>
+        <input id="demo" type="text">
+        <button type="button" onClick="testNumber()">The answer</button>
+        <p id="message"></p>
+        <script>
+            function testNumber() {
+                var message, x;
+                message = document.getElementById("message");
+                message.innerHTML = "";
+                x = document.getElementById("demo").value;
+                try {
+                    if (x == "") throw "empty..";
+                    if (isNaN(x)) throw "not a number!";
+                    if (x > 5) throw "too high ;D";
+                    if (x < 2) throw "too low ;D";
+                } catch (err) {
+                    message.innerHTML = "It is " + err;
+                } finally {
+                    document.getElementById("demo").value = "";
+                }
+            }
+        </script>
+</body>
+
+</html>
