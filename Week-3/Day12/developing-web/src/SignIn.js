@@ -54,14 +54,54 @@ class SignIn extends React.Component {
     this.setState({errors, [name]: value});
   }
 
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (event == "")  {
+  //     alert('Please fill all field!');
+  //   } else if (validateForm(this.state.errors).event === "") {
+  //     alert('Sign In success!');
+  //   } else {
+  //     alert('Sign In error!');
+  //   }
+  // }
+
+
+
+
   handleSubmit = (event) => {
     event.preventDefault();
-    if (validateForm(this.state.errors)) {
+    if (this.state.errors.email === "" && this.state.errors.password === "") {
       alert('Sign In success!');
-    } else{
+    // } else if (event == "") {
+    //   alert('Please fill all field!');
+    } else {
       alert('Sign In error!');
     }
   }
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (validateForm(this.state.errors)) {
+  //     alert('Sign In success!');
+  //   } else if (event == "") {
+  //     alert('Please fill all field!');
+  //   } else {
+  //     alert('Sign In error!');
+  //   }
+  // }
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (event == null && event == "") {
+  //     alert('Sign In success!');
+  //   } else if (validateForm(this.state.errors)) {
+  //     alert('Sign In error!');
+  //   } else {
+  //     alert ('Please fill all field!');
+  //   }
+  // }
+
+
 
   render() {
     const {errors} = this.state;
@@ -69,16 +109,16 @@ class SignIn extends React.Component {
       <div className='wrapper'>
         <div className='form-wrapper'>
           <h2>Sign In</h2>
-          <form onSubmit={this.handleSubmit} noValidate>
+          <form onSubmit={this.handleSubmit} required>
             <div className='email'>
               <label htmlFor="email">Email</label>
-              <input type='email' name='email' onChange={this.handleChange} noValidate />
+              <input type='email' name='email' required onChange={this.handleChange} />
               {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
-              <input type='password' name='password' onChange={this.handleChange} noValidate />
+              <input type='password' name='password' required onChange={this.handleChange} />
               {errors.password.length > 0 && 
                 <span className='error'>{errors.password}</span>}
             </div>

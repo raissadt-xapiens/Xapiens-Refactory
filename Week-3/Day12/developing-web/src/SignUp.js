@@ -86,7 +86,9 @@ class Signup extends React.Component {
     event.preventDefault();
     if (validateForm(this.state.errors)) {
       alert('Valid Form!');
-    } else{
+    } else if (event == null && event == "") {
+      alert('Please fill all field!'); 
+    } else {
       alert('Invalid Form!');
     }
   }
