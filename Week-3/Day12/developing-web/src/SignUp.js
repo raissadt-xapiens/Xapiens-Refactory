@@ -1,17 +1,3 @@
-// import React from 'react';
-// import './Sign.css';
-
-// function Signup() {
-//     <div>
-//         <h2>Sign Up</h2>
-//     </div>
-// }
-
-// export default Signup;
-
-
-
-
 import React from 'react';
 import '../src/assets/styles/Sign.css';
 
@@ -42,7 +28,13 @@ class Signup extends React.Component {
         password: '',
         phoneNumber: '',
         address: '',
-      }
+      },
+      fullNameValid: false,
+      emailValid: false,
+      passwordValid: false,
+      phoneNumberValid: false,
+      addressValid: false,
+      formValid: false
     };
   }
 
@@ -92,9 +84,9 @@ class Signup extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if(validateForm(this.state.errors)) {
+    if (validateForm(this.state.errors)) {
       alert('Valid Form!');
-    }else{
+    } else{
       alert('Invalid Form!');
     }
   }
@@ -105,7 +97,7 @@ class Signup extends React.Component {
     return (
       <div className='wrapper'>
         <div className='form-wrapper'>
-          <h2>Create Account</h2>
+          <h2>Sign Up</h2>
           <form onSubmit={this.handleSubmit} noValidate>
             <div className='fullName'>
               <label htmlFor="fullName">Full Name</label>
@@ -138,7 +130,7 @@ class Signup extends React.Component {
                 <span className='error'>{errors.address}</span>}
             </div>
             <div className='submit'>
-              <button>Create</button>
+              <button onClick={this.handleSubmit} type='submit'>Create</button>
             </div>
           </form>
         </div>

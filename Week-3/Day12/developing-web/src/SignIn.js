@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FormErrors } from './FormErrors';
 import '../src/assets/styles/Sign.css';
 
 
@@ -15,6 +14,7 @@ const validateForm = errors => {
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       email: null,
       password: null,
