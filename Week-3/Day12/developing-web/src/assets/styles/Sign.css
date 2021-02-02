@@ -102,10 +102,6 @@ p, div {
     display: relative;
   }
   
-  /* .fullName {
-    margin-right: 1%;
-  } */
-  
   .fullName,
   .email,
   .password,
@@ -125,3 +121,11 @@ p, div {
     margin-top: 25px;
     margin-bottom: 20px;
   }
+
+
+
+
+/* .demoForm {
+	width: 500px;
+	margin: auto;
+} */
