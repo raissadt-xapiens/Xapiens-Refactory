@@ -68,6 +68,7 @@ const Header = (props) => {
                             <NavLink
                                 className="main-link"
                                 href="#"
+                                rel="noreferrer noopener"
                             >
                                 About Us
                             </NavLink>
@@ -76,6 +77,7 @@ const Header = (props) => {
                             <NavLink
                                 className="main-link"
                                 href="#"
+                                rel="noreferrer noopener"
                             >
                                 Projects
                             </NavLink>
@@ -84,6 +86,7 @@ const Header = (props) => {
                             <NavLink
                                 className="main-link"
                                 href="#"
+                                rel="noreferrer noopener"
                             >
                                 News
                             </NavLink>
