@@ -88,9 +88,9 @@ class Signup extends React.Component {
     if (this.state.fullName === '' && this.state.email === '' && this.state.password === '' && this.state.phoneNumber === '' && this.state.address === '') {
       alert('Please fill the blank!');
     } else if (validateForm(this.state.errors)) {
-      alert('Sign In success!');
+      alert('Sign Up success!');
     } else {
-      alert('Sign In error');
+      alert('Sign Up error!');
     }
   }
 
