@@ -21,8 +21,14 @@ const Formies = () => {
     return (
       <div className='wrapper'>
         <div className='form-wrapper'>
-          <h2>Sign In</h2>
+          <h2>Sign Up</h2>
           <form onSubmit={handleSubmit} noValidate>
+            <div className='fullName'>
+              <label htmlFor="fullName">Full Name</label>
+              <input type='text' name='fullName' onChange={handleChange} required />
+              {errors.fullName && 
+                <span className='help is-danger'>{errors.fullName}</span>}
+            </div>
             <div className='email'>
               <label htmlFor="email">Email</label>
               <input className={`input ${errors.email && 'is-danger'}`} type='email' name='email' onChange={handleChange} value={values.email || ''} required />
@@ -34,6 +40,18 @@ const Formies = () => {
               <input className={`input ${errors.password && 'is-danger'}`} type='password' name='password' onChange={handleChange} value={values.password || ''} required />
               {errors.password && 
                 <span className='help is-danger'>{errors.password}</span>}
+            </div>
+            <div className='phoneNumber'>
+                <label htmlFor='phoneNumber'>Phone Number</label>
+                <input type='number' min='0' name='phoneNumber' onChange={handleChange} required />
+                {errors.phoneNumber &&
+                <span className='help is-danger'>{errors.phoneNumber}</span>}
+            </div>
+            <div className='address'>
+                <label htmlFor='address'>Address</label>
+                <input type='text' name='address' onChange={handleChange} required />
+                {errors.address && 
+                <span className='help is-danger'>{errors.address}</span>}
             </div>
             <div className='submit'>
               <button type='submit'>Submit</button>

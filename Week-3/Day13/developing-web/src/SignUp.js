@@ -47,8 +47,8 @@ class Signup extends React.Component {
     switch (name) {
       case 'fullName': 
         errors.fullName = 
-          value.length < 5
-            ? 'Full Name must be at least 5 characters long!'
+          value.length < 4
+            ? 'Full Name must be at least 4 characters long!'
             : '';
         break;
       case 'email': 
@@ -66,7 +66,7 @@ class Signup extends React.Component {
       case 'phoneNumber':
         errors.phoneNumber =
           value.length < 10
-            ? 'Phone number must be at least 10 characters long!'
+            ? 'Phone Number must be at least 10 characters long!'
             : '';
         break;
       case 'address':
@@ -82,11 +82,10 @@ class Signup extends React.Component {
     this.setState({errors, [name]: value});
   }
 
-
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.state.fullName === '' && this.state.email === '' && this.state.password === '' && this.state.phoneNumber === '' && this.state.address === '') {
-      alert('Please fill the blank!');
+      alert('Please fill in the blank!');
     } else if (validateForm(this.state.errors)) {
       alert('Sign Up success!');
     } else {
