@@ -17,14 +17,14 @@ p, div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #4A4E69;
+    background-color: black;
     margin: auto;
   }
   
   .form-wrapper {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: auto;
     height: auto;
     max-width: 80%;
     min-width: 100px;
@@ -89,7 +89,7 @@ p, div {
     color: #fefefe;
   }
   button:hover {
-    background-color: #4A4E69;
+    background-color: #B3A593;
     color: #fefefe;
   }
   
@@ -122,11 +122,3 @@ p, div {
     margin-top: 25px;
     margin-bottom: 20px;
   }
-
-
-
-
-/* .demoForm {
-	width: 500px;
-	margin: auto;
-} */
