@@ -1,6 +1,6 @@
 import React from 'react';
-import useForm from '../src/components/Form/Function';
-import validate from '../src/components/Form/Validation';
+import useForm from './components/Form/Function';
+import validate from './components/Form/Validation';
 import '../src/assets/styles/Sign.css';
 
 
