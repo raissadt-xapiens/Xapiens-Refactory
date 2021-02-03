@@ -1,15 +1,17 @@
 import React from 'react';
-import useForm from '../Form/Function';
-import Validate from '../Form/Validation';
+import useForm from '../src/components/Form/Function';
+import validate from './src/components/FOrm/Validation';
+import '../src/assets/styles/Sign.css';
 
-const Form = () => {
+
+const Formies = () => {
 
     const {
         values,
         errors,
         handleChange,
         handleSubmit,
-    } = useForm(login, Validate);
+    } = useForm(login, validate);
 
     function login() {
         console.log('No errors, submit callback called!');
@@ -42,4 +44,4 @@ const Form = () => {
     )
 }
 
-export default Form;
+export default Formies;

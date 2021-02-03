@@ -1,4 +1,4 @@
-export default function Validate(values) {
+export default function validate(values) {
     let errors = {};
     if (!values.email) {
         errors.email = 'Please fill in the blank!';
