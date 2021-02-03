@@ -27,13 +27,13 @@ const FHSignin = () => {
               <label htmlFor="email">Email</label>
               <input className={`input ${errors.email && 'is-danger'}`} type='email' name='email' onChange={handleChange} value={values.email || ''} required />
               {errors.email && 
-                <span className='help is-danger'>{errors.email}</span>}
+                <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
               <input className={`input ${errors.password && 'is-danger'}`} type='password' name='password' onChange={handleChange} value={values.password || ''} required />
               {errors.password && 
-                <span className='help is-danger'>{errors.password}</span>}
+                <span className='error'>{errors.password}</span>}
             </div>
             <div className='submit'>
               <button type='submit'>Submit</button>

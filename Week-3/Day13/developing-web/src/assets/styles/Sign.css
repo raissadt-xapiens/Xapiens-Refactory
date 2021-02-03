@@ -6,10 +6,6 @@
     }
 
 
-p, div {
-    font-family: Lato;
-  }
-  
   .wrapper {
     height: 100vh;
     width: 100%;
@@ -17,7 +13,7 @@ p, div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #B3A593;
     margin: auto;
   }
   
@@ -26,8 +22,9 @@ p, div {
     flex-direction: column;
     width: auto;
     height: auto;
-    max-width: 80%;
-    min-width: 100px;
+    max-width: 50%;
+    max-height: 100%;
+    min-width: 80px;
     min-height: 400px;
     padding: 20px 40px;
     border-radius: 6px;
@@ -84,12 +81,12 @@ p, div {
     margin-top: 0.5em;
     padding: 	0.938em;
     border: none;
-    border-radius: 10px;
-    background-color: #22223B;
+    border-radius: 20px;
+    background-color: #B3A593;
     color: #fefefe;
   }
   button:hover {
-    background-color: #B3A593;
+    background-color: black;
     color: #fefefe;
   }
   
@@ -98,8 +95,9 @@ p, div {
   }
   
   .error {
-    color:#db2269;
+    color:#910000;
     font-size: 0.625em;
+    font-style: italic;
     display: relative;
   }
   
@@ -112,7 +110,9 @@ p, div {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-family: 'SimSun-ExtB';
+    font-size: 17.5px;
   }
   
   .submit {
@@ -121,4 +121,6 @@ p, div {
     flex-wrap: wrap;
     margin-top: 25px;
     margin-bottom: 20px;
+    font-family: 'SimSun-ExtB';
+    font-size: 22.5px;
   }

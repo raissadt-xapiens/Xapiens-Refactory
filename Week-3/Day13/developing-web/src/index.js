@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import SignIn from './SignIn';
 // import SignUp from './SignUp';
 // import FHSignin from './FormSignIn';
-import FHSignup from './FormSignUp';
+// import FHSignup from './FormSignUp';
 // import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,7 +12,7 @@ ReactDOM.render(
     {/* <SignIn /> */}
     {/* <SignUp /> */}
     {/* <FHSignin /> */}
-    <FHSignup />
+    {/* <FHSignup /> */}
     {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')

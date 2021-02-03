@@ -27,31 +27,31 @@ const Formies = () => {
               <label htmlFor="fullName">Full Name</label>
               <input className={`input ${errors.fullName && 'is-danger'}`} type='text' name='fullName' onChange={handleChange} value={values.fullName || ''} required />
               {errors.fullName && 
-                <span className='help is-danger'>{errors.fullName}</span>}
+                <span className='error'>{errors.fullName}</span>}
             </div>
             <div className='email'>
               <label htmlFor="email">Email</label>
               <input className={`input ${errors.email && 'is-danger'}`} type='email' name='email' onChange={handleChange} value={values.email || ''} required />
               {errors.email && 
-                <span className='help is-danger'>{errors.email}</span>}
+                <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
               <input className={`input ${errors.password && 'is-danger'}`} type='password' name='password' onChange={handleChange} value={values.password || ''} required />
               {errors.password && 
-                <span className='help is-danger'>{errors.password}</span>}
+                <span className='error'>{errors.password}</span>}
             </div>
             <div className='phoneNumber'>
                 <label htmlFor='phoneNumber'>Phone Number</label>
                 <input className={`input ${errors.phoneNumber && 'is-danger'}`} type='number' min='0' name='phoneNumber' onChange={handleChange} value={values.phoneNumber || ''} required />
                 {errors.phoneNumber &&
-                <span className='help is-danger'>{errors.phoneNumber}</span>}
+                <span className='error'>{errors.phoneNumber}</span>}
             </div>
             <div className='address'>
                 <label htmlFor='address'>Address</label>
                 <input className={`input ${errors.address && 'is-danger'}`} type='text' name='address' onChange={handleChange} value={values.address || ''} required />
                 {errors.address && 
-                <span className='help is-danger'>{errors.address}</span>}
+                <span className='error'>{errors.address}</span>}
             </div>
             <div className='submit'>
               <button type='submit'>Submit</button>
