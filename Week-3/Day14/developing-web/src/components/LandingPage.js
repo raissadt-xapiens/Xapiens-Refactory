@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../src/components/Header';
-import Introduction from '../src/components/Home/Introduction';
-import Campaign from '../src/components/Home/Campaign';
-import Contact from '../src/components/Home/Contact';
-import Footer from '../src/components/Footer';
+import Header from '../components/Header';
+import Introduction from '../components/Home/Introduction';
+import Campaign from '../components/Home/Campaign';
+import Contact from '../components/Home/Contact';
+import Footer from '../components/Footer';
 
 
 function Landing() {
