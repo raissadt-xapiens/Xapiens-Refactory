@@ -1,9 +1,9 @@
-/* @font-face {
+@font-face {
     font-family: 'SimSun-ExtB';
     font-style: normal;
     font-weight: normal;
     src: local('SimSun-ExtB'), url('simsunb.woff') format('woff');
-    } */
+    }
 
 
 .ending {
@@ -11,4 +11,21 @@
     font-size: 20px;
     text-align: center;
     height: 40px;
+    bottom: 0%;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .ending {font-size: 15px; height: 35px;}
+}
+
+
+@media only screen and (max-width: 768px) {
+    .ending {font-size: 15px; height: 30px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .ending {font-size: 10px; height: 20px;}
 }

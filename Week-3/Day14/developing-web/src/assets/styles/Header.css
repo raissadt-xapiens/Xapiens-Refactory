@@ -61,3 +61,21 @@
     background-color: white;
     color: black;
 }
+
+
+
+@media only screen and (max-width: 992px) {
+    .oipa {font-size: 50px;}
+    .main-link {font-size: 25px;}
+}
+
+
+@media only screen and (max-width: 768px) {
+    .oipa {font-size: 45px;}
+    .main-link {font-size: 20px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .oipa {font-size: 30px;}
+    .main-link {font-size: 15px;}
+}

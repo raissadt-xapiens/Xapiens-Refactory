@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'SimSun-ExtB';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('simsunb.woff');
+    }
+
+
+/* News */
+.headline {
+    font-family: 'SimSun-ExtB';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    padding: 75px 0;
+}
+
+.years-of-news {
+    font-family: 'SimSun-ExtB';
+    font-size: 30px;
+    font-style: italic;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.deck-of-news {
+    font-family: 'SimSun-ExtB';
+}
