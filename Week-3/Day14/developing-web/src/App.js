@@ -1,14 +1,30 @@
 import React from 'react';
-// import Landing from '../src/components/LandingPage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link
+} from 'react-router-dom';
+import Landing from '../src/components/LandingPage';
 import News from '../src/components/NewsPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Landing /> */}
-      <News />
-    </div>
+    <Router>
+      <div className="App">
+
+
+        <Switch>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

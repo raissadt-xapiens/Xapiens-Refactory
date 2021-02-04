@@ -18,6 +18,7 @@ import {
     Input,
     Col
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import '../assets/styles/Header.css';
@@ -52,7 +53,8 @@ const Header = (props) => {
                     <h2
                         className="oipa"
                     >
-                        OIPA
+                        <Link to="/">OIPA</Link>
+                        {/* OIPA */}
                     </h2>
                 </NavbarBrand>
                 <NavbarToggler
@@ -85,10 +87,11 @@ const Header = (props) => {
                         <NavItem>
                             <NavLink
                                 className="main-link"
-                                href="#"
-                                rel="noreferrer noopener"
+                                // href="#"
+                                // rel="noreferrer noopener"
                             >
-                                News
+                                <Link to="/news">News</Link>
+                                {/* News */}
                             </NavLink>
                         </NavItem>
                         <NavItem>
