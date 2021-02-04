@@ -65,17 +65,17 @@
 
 
 @media only screen and (max-width: 992px) {
-    .oipa {font-size: 50px;}
+    .oipa {font-size: 50px; margin-left: 20px;}
     .main-link {font-size: 25px;}
 }
 
 
 @media only screen and (max-width: 768px) {
-    .oipa {font-size: 45px;}
+    .oipa {font-size: 45px; margin-left: 10px;}
     .main-link {font-size: 20px;}
 }
 
 @media only screen and (max-width: 600px) {
-    .oipa {font-size: 30px;}
+    .oipa {font-size: 35px; margin-left: 10px;}
     .main-link {font-size: 15px;}
 }
