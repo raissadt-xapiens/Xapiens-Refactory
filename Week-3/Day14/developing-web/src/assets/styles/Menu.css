@@ -15,15 +15,51 @@
     margin: auto;
     padding: 75px 0;
 }
-
 .years-of-news {
     font-family: 'SimSun-ExtB';
     font-size: 30px;
     font-style: italic;
     margin: auto;
-    padding: 25px 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
-
 .deck-of-news {
     font-family: 'SimSun-ExtB';
+}
+.news-title {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.news-text {
+    font-size: 20px;
+    padding-top: 20px;
+}
+Button {
+    color: brown;
+    background-color: bisque;
+    padding-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .headline {font-size: 50px;}
+    .years-of-news {font-size: 25px;}
+    .news-title {font-size: 25px;}
+    .news-text {font-size: 17.5px;}
+}
+
+@media only screen and (max-width: 768px) {
+    .headline {font-size: 45px;}
+    .years-of-news {font-size: 20px;}
+    .news-title {font-size: 20px;}
+    .news-text {font-size: 15px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .headline {font-size: 35px;}
+    .years-of-news {font-size: 20px;}
+    .news-title {font-size: 15px;}
+    .news-text {font-size: 12.5px;}
 }
