@@ -18,7 +18,7 @@ import {
     Input,
     Col
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import '../assets/styles/Header.css';
@@ -51,10 +51,17 @@ const Header = (props) => {
                     className="mr-auto"
                 >
                     <h2
-                        className="oipa"
+                        className="oipa" 
                     >
-                        <Link to="/">OIPA</Link>
-                        {/* OIPA */}
+                        <NavLink 
+                            href="/" 
+                            rel="noreferrer noopener" 
+                            style={{
+                                color: "black"
+                            }}
+                        >
+                            OIPA
+                        </NavLink>
                     </h2>
                 </NavbarBrand>
                 <NavbarToggler
@@ -69,29 +76,37 @@ const Header = (props) => {
                         <NavItem>
                             <NavLink
                                 className="main-link"
-                                href="#"
+                                href="/menus"
                                 rel="noreferrer noopener"
                             >
+                                {/* <Link to="/menus">
+                                    About Us
+                                </Link> */}
                                 About Us
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
                                 className="main-link"
-                                href="#"
+                                href="/projects"
                                 rel="noreferrer noopener"
                             >
+                                {/* <Link to="/projects">
+                                    Projects
+                                </Link> */}
                                 Projects
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
                                 className="main-link"
-                                // href="#"
-                                // rel="noreferrer noopener"
+                                href="/news"
+                                rel="noreferrer noopener"
                             >
-                                <Link to="/news">News</Link>
-                                {/* News */}
+                                News
+                                {/* <Link to="/news">
+                                    News
+                                </Link> */}
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -130,7 +145,7 @@ const Header = (props) => {
                             </Col>
                         </Form>
                         <br/>
-                        <a onClick={toggle3} className="modal-link">Don't have an account?</a>
+                        <a href="!#" onClick={toggle3} className="modal-link">Don't have an account?</a>
                             <Modal isOpen={nestedModal} toggle={toggle3} onCLosed={closeAll ? toggle2 : undefined} className="pop-modal">
                                 <ModalHeader className="modal-title">Sign Up</ModalHeader>
                                 <ModalBody>

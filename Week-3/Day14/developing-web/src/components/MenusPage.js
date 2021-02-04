@@ -5,19 +5,18 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-function Projects() {
+function Menus() {
     return (
-        <div className="projects-page">
+        <div className="menus-page">
             <Header />
             {/* //ini nanti dipisah lagi jadi allprojects.js */}
             <Container>
-                <h1>Projects</h1>
-                <br/>
-                <h2>Issues</h2>
+                <h1>List</h1>
+                <h1>Donation</h1>
             </Container>
             <Footer />
         </div>
     )
 }
 
-export default Projects;
+export default Menus;
