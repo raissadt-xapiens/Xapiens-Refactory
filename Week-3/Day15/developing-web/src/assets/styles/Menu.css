@@ -6,10 +6,11 @@
     }
 
 
-/* News */
+/* NEWS */
 .headline {
+    color: #B3A593;
     font-family: 'SimSun-ExtB';
-    font-size: 60px;
+    font-size: 55px;
     font-style: italic;
     font-weight: bold;
     margin: auto;
@@ -25,6 +26,11 @@
 }
 .deck-of-news {
     font-family: 'SimSun-ExtB';
+    border-color: 1px solid #B3A593;
+    /* background-color: #B3A593; */
+}
+.body-of-news {
+    background-color: #e9e5df;
 }
 .news-title {
     font-size: 30px;
@@ -38,7 +44,7 @@
 .news-button {
     font-size: 30px;
     color: black!important;
-    background-color: #bababa!important;
+    background-color: #B3A593!important;
     margin-bottom: 50px;
 }
 
@@ -67,3 +73,76 @@
     .news-text {font-size: 12.5px;}
     .news-button {font-size: 17.5px;}
 }
+
+
+
+
+
+/* PROJECTS */
+/* .carousel-item {
+    max-width: 500px;
+    max-height: 500px;
+} */
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+  

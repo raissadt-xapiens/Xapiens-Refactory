@@ -33,49 +33,12 @@ function AllNews(props) {
                 >
                     2021 NEWS
                 </h1>
-                    {/* <CardDeck
-                        className="deck-of-news"
-                    >
-                        <Card>
-                            <CardImg top width="100%" src={News1} alt="News-1" />
-                                <CardBody>
-                                    <CardTitle tag="h4">News 1</CardTitle>
-                                    <CardSubtitle tag="h5" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                                    <CardText>Car strayyyyyssssssssssssssssss.</CardText>
-                                    <Button>
-                                        Read more...
-                                    </Button>
-                                </CardBody>
-                        </Card>
-                        <Card>
-                            <CardImg top width="100%" src={News2} alt="News-1" />
-                                <CardBody>
-                                    <CardTitle tag="h4">News 1</CardTitle>
-                                    <CardSubtitle tag="h5" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                                    <CardText>Car strayyyyyssssssssssssssssss.</CardText>
-                                    <Button>
-                                        Read more...
-                                    </Button>
-                                </CardBody>
-                        </Card>
-                        <Card>
-                            <CardImg top width="100%" src={News1} alt="News-1" />
-                                <CardBody>
-                                    <CardTitle tag="h4">News 1</CardTitle>
-                                    <CardSubtitle tag="h5" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                                    <CardText>Car strayyyyyssssssssssssssssss.</CardText>
-                                    <Button>
-                                        Read more...
-                                    </Button>
-                                </CardBody>
-                        </Card>
-                    </CardDeck> */}
                     <CardDeck
                         className="deck-of-news"
                     >
                         <Card>
                             <CardImg top width="100%" src={News1} alt="News-1" />
-                                <CardBody>
+                                <CardBody className="body-of-news">
                                     <CardTitle className="news-title">Community Cats Neglected in The French Island of Corsica: OIPA's Volunteers Assists Them with Food, Treatment, and Sterilization</CardTitle>
                                     <CardSubtitle className="mb-2 text-muted" style={{fontStyle: "italic"}}>February 3, 2021</CardSubtitle>
                                     <CardText className="news-text">Stray cats do not have an easy life in the French island of Corsica in the Mediterranean Sea. No one care about and locals mainly see them as annoying problem to avoid and not as living beings in need of care and protection. Moreover, ..</CardText>
@@ -92,7 +55,7 @@ function AllNews(props) {
                     >
                         <Card>
                             <CardImg top width="100%" src={News2} alt="News-2" />
-                                <CardBody>
+                                <CardBody className="body-of-news">
                                     <CardTitle className="news-title">Three Men Filmed Beating Ganges River Dolphin to Death Arrested. OIPA India Reminds That Those Animals are a National Heritage That Must be Protected</CardTitle>
                                     <CardSubtitle className="mb-2 text-muted" style={{fontStyle: "italic"}}>January 23, 2021</CardSubtitle>
                                     <CardText className="news-text">The attack, which happened on 31 December, involved a gang of young men who violently hit a Ganges River dolphin with wooden rods and an axe until it bled, suffocating then the animal beneath the water of the Sharda canal in the Indian state of Uttar Pradesh. The dolphin was later found dead by ...</CardText>
@@ -109,7 +72,7 @@ function AllNews(props) {
                     >
                         <Card>
                             <CardImg top width="100%" src={News3} alt="News-3" />
-                                <CardBody>
+                                <CardBody className="body-of-news">
                                     <CardTitle className="news-title">A New Chapter Begins: "Protection and Care for Our Animals": Thanks to OIPA Sierra Leone</CardTitle>
                                     <CardSubtitle className="mb-2 text-muted" style={{fontStyle: "italic"}}>January 13, 2021</CardSubtitle>
                                     <CardText className="news-text">It is always a pleasure when we have to announce a new OIPA delegation, especially when the love and commitment for animals comes from countries that, despite the heavy difficulties faced daily by the local population, are still willing to dedicate precious time to the care and protection of animals. Our International Representative organized a ..</CardText>
@@ -126,7 +89,7 @@ function AllNews(props) {
                     >
                         <Card>
                             <CardImg top width="100%" src={News4} alt="News-4" />
-                                <CardBody>
+                                <CardBody className="body-of-news">
                                     <CardTitle className="news-title">Let's Start With The ABC! The Animal Birth Control Program for Stray Dogs of Voice of Animal Nepal: Spray / Neuter and Anti Rabies Vaccination Activities</CardTitle>
                                     <CardSubtitle className="mb-2 text-muted" style={{fontStyle: "italic"}}>January 3, 2021</CardSubtitle>
                                     <CardText className="news-text">Voice of Animal Nepal, member league of OIPA International, is a small organization with a big heart. Despite the difficult period and resources, which are limited, their love and compassion for animals, especially for the many stray dogs who live homeless after being abandoned, is stronger than ever. The association has been feeding ...</CardText>
