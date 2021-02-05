@@ -1,28 +1,28 @@
 import React from 'react';
 import {
     Container,
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
-    Card,
-    CardDeck,
-    CardImg,
-    CardBody,
-    CardTitle,
-    CardSubtitle,
-    Button
+    // Carousel,
+    // CarouselItem,
+    // CarouselControl,
+    // CarouselIndicators,
+    // CarouselCaption,
+    // Card,
+    // CardDeck,
+    // CardImg,
+    // CardBody,
+    // CardTitle,
+    // CardSubtitle,
+    // Button
 } from 'reactstrap';
 import Campaign1 from '../../assets/images/campaign1.jpeg';
 import '../../assets/styles/Menu.css';
 
 
-const items = [
-    {
-        src= 
-    }
-]
+// const items = [
+//     {
+//         src: {Campaign1}
+//     }
+// ]
 
 
 

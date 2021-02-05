@@ -75,7 +75,7 @@ const Header = (props) => {
                         <NavItem>
                             <NavLink
                                 className="main-link"
-                                href="/menus"
+                                href="/teams"
                                 rel="noreferrer noopener"
                             >
                                 About Us

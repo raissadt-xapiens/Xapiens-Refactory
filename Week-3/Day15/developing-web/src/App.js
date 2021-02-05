@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import Landing from '../src/components/LandingPage';
-import Menus from '../src/components/MenusPage';
+import Teams from '../src/components/TeamsPage';
 import Projects from '../src/components/ProjectsPage';
 import News from '../src/components/NewsPage';
 import './App.css';
@@ -15,8 +15,8 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/menus">
-            <Menus />
+          <Route path="/teams">
+            <Teams />
           </Route>
           <Route path="/projects">
             <Projects />
