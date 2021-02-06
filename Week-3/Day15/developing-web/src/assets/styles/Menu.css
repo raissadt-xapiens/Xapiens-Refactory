@@ -91,15 +91,58 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .continent-headline{font-size: 35px;}
+  .continent-headline {font-size: 35px;}
   .continent-description {font-size: 22.5px;}
 }
 
 
 
 
+/* PROJECTS */
+.proj-camp {
+  font-family: 'SimSun-ExtB';
+  font-size: 50px;
+  color: #5F5240;
+  margin: auto;
+  padding-top: 125px;
+  padding-bottom: 75px;
+}
+.carousel-projects {
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-style: dashed!important;
+}
+.list-issues {
+  font-family: 'SimSun-ExtB';
+  font-size: 20px;
+  font-style: italic;
+}
+.button-support {
+  color: #5F5240;
+  font-family: 'SimSun-ExtB';
+  font-size: 30px!important;
+  background-color: #B3A593!important;
+  border-radius: 20px!important;
+  margin: auto;
+  padding-top: 20px;
+}
 
 
+
+@media only screen and (max-width: 992px) {
+  .proj-camp {font-size: 45px;}
+  .button-support {font-size: 25px!important;}
+}
+@media only screen and (max-width: 767px) {
+  .proj-camp {font-size: 40px;}
+  .list-issues {font-size: 17.5px;}
+  .button-support {font-size: 25px!important;}
+}
+@media only screen and (max-width: 600px) {
+  .proj-camp {font-size: 35px;}
+  .button-support {font-size: 20px!important;}
+}
 
 
 
