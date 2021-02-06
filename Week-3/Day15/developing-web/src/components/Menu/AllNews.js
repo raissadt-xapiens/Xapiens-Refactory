@@ -29,7 +29,7 @@ function AllNews(props) {
                 }}
             >
                 <h1
-                    className="headline"
+                    className="headline-news"
                 >
                     2021 NEWS
                 </h1>

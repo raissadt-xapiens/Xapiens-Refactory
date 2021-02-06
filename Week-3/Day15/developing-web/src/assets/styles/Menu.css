@@ -14,7 +14,7 @@
   color: #5F5240;
   font-family: 'SimSun-ExtB';
   font-size: 55px;
-  margin-top: 100px;
+  margin-top: 125px;
 }
 .continent-description {
   color: #5F5240;
@@ -39,6 +39,7 @@
   height: 30px;
 }
 .continent-tagline {
+  color: #B3A593;
   font-family: 'SimSun-ExtB';
   font-size: 40px;
   margin: auto;
@@ -74,6 +75,25 @@
 }
 
 
+@media only screen and (max-width: 992px) {
+  .continent-headline {font-size: 45px;}
+  .continent-description {font-size: 25px;}
+  .continent-join {font-size: 65px;}
+  .continent-tagline {font-size: 35px;}
+}
+
+@media only screen and (max-width: 768px) {
+  .continent-headline {font-size: 42.5px;}
+  .continent-description {font-size: 22.5px;}
+  .continent-join {font-size: 60px;}
+  .continent-tagline {font-size: 30px;}
+  .continent-row {font-size: 17.5px;}
+}
+
+@media only screen and (max-width: 600px) {
+  .continent-headline{font-size: 35px;}
+  .continent-description {font-size: 22.5px;}
+}
 
 
 
@@ -85,14 +105,15 @@
 
 
 /* NEWS */
-.headline {
+.headline-news {
     color: #B3A593;
     font-family: 'SimSun-ExtB';
     font-size: 55px;
     font-style: italic;
     font-weight: bold;
     margin: auto;
-    padding: 75px 0;
+    padding-top: 125px;
+    padding-bottom: 75px;
 }
 .years-of-news {
     font-family: 'SimSun-ExtB';
@@ -129,7 +150,7 @@
 
 
 @media only screen and (max-width: 992px) {
-    .headline {font-size: 50px;}
+    .headline-news {font-size: 50px;}
     .years-of-news {font-size: 25px;}
     .news-title {font-size: 25px;}
     .news-text {font-size: 17.5px;}
@@ -137,7 +158,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .headline {font-size: 45px;}
+    .headline-news {font-size: 45px;}
     .years-of-news {font-size: 20px;}
     .news-title {font-size: 20px;}
     .news-text {font-size: 15px;}
@@ -145,82 +166,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .headline {font-size: 35px;}
+    .headline-news {font-size: 35px;}
     .years-of-news {font-size: 20px;}
     .news-title {font-size: 15px;}
     .news-text {font-size: 12.5px;}
     .news-button {font-size: 17.5px;}
 }
-
-
-
-
-
-/* PROJECTS */
-/* .carousel-item {
-    max-width: 500px;
-    max-height: 500px;
-} */
-
-@media (min-width: 768px) {
-    /* show 3 items */
-    .carousel-inner .active,
-    .carousel-inner .active + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block;
-    }
-  
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-      transition: none;
-    }
-  
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-  
-    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -33.3333%;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-    }
-  
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-  
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-    }
-  
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-    }
-  }
-  
