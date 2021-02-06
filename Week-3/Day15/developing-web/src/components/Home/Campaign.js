@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     Container,
-    Button
+    Button,
+    NavLink
 } from 'reactstrap';
 import '../../assets/styles/Content.css';
 
@@ -13,7 +14,10 @@ function Campaign() {
                 // fluid={true}
                 style={{
                     height: "auto",
-                    backgroundColor: "white"
+                    backgroundColor: "white",
+                    margin: "auto",
+                    paddingTop: "100px",
+                    paddingBottom: "150px"
                 }}
             >
                 <h1
@@ -43,8 +47,9 @@ function Campaign() {
                 <br/>
                 <Button
                     className="donation"
+                    type="link"
                     style={{
-                        color: "black",
+                        color: "black!important",
                         backgroundColor: "#AC9371",
                         fontFamily: 'SimSun-ExtB',
                         height: "80px",
@@ -60,10 +65,10 @@ function Campaign() {
                         borderRadius: "20px"
                     }}
                 >
+                    <NavLink href="/donation">
                     DONATE
+                    </NavLink>
                 </Button>
-                <br/>
-                <br />
             </Container>
         </div>
     )

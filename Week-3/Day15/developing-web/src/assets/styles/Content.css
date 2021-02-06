@@ -107,10 +107,7 @@
     font-size: 20px;
     font-weight: 700;
 }
-/* .submit {
-    background-color: #AC9371!important;
-    font-size: 30px;
-} */
+
 
 
 
@@ -139,4 +136,76 @@
     /* .info {font-size: 25px; padding-left: 50px; padding-right: 50px;}
     .office {font-size: 20px; padding-left: 50px; padding-right: 50px;}
     .socmed-1 {padding-left: 50px; padding-right: 50px;} */
+}
+
+
+
+
+
+/* Donation */
+.tagline-donation {
+    color: #B3A593;
+    font-family: 'SimSun-ExtB';
+    font-size: 45px;
+    font-weight: 700;
+    margin: auto;
+    padding-top: 125px;
+    padding-bottom: 25px;
+}
+.row-donation {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.card-donation {
+    margin: auto;
+    border-color: #B3A593;
+}
+.type-of-donation {
+    color: #B3A593;
+    text-shadow: black;
+    font-family: 'SimSun-ExtB';
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.img-donation {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+.description-of-donation {
+    font-family: 'SimSun-ExtB';
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.check-donation {
+    font-size: 15px;
+}
+.button-donation {
+    font-size: 20px!important;
+    background-color: black!important;
+    border-radius: 20px!important;
+    width: 5cm;
+    height: 1.25cm;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .tagline-donation {font-size: 37.5px;}
+    .type-of-donation {font-size: 27.5px;}
+}
+
+@media only screen and (max-width: 768px) {
+    .tagline-donation {font-size: 35px;}
+    .type-of-description {font-size: 25px;}
+    .description-of-donation {font-size: 17.5px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .tagline-donation {font-size: 30px;}
 }

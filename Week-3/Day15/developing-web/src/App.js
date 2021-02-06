@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import Landing from '../src/components/LandingPage';
+import Donation from '../src/components/DonationPage';
 import Teams from '../src/components/TeamsPage';
 import Projects from '../src/components/ProjectsPage';
 import News from '../src/components/NewsPage';
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/news">
             <News />
+          </Route>
+          <Route path="/donation">
+            <Donation />
           </Route>
           <Route path="/">
             <Landing />
