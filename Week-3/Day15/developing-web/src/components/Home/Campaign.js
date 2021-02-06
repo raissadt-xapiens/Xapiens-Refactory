@@ -49,7 +49,6 @@ function Campaign() {
                     className="donation"
                     type="link"
                     style={{
-                        color: "black!important",
                         backgroundColor: "#AC9371",
                         fontFamily: 'SimSun-ExtB',
                         height: "80px",
@@ -65,7 +64,7 @@ function Campaign() {
                         borderRadius: "20px"
                     }}
                 >
-                    <NavLink href="/donation">
+                    <NavLink href="/donation" style={{color: "black"}}>
                     DONATE
                     </NavLink>
                 </Button>

@@ -117,25 +117,33 @@
 @media only screen and (max-width: 992px) {
     .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
     .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
-    /* .info {font-size: 35px; margin-left: -50px; margin-right: -50px;}
-    .office {font-size: 25x; margin-left: -50px; margin-right: -50px;}
-    .socmed-1 {margin-left: -50px; margin-right: -50px;}  */
+    .project {font-size: 35px;}
+    .donation {font-size: 35px!important; width: "120px"!important; height: "50px"!important;}
+    .info {font-size: 35px; margin-left: -50px; margin-right: -50px;}
+    .office {font-size: 27.5px; margin-left: -50px; margin-right: -50px;}
+    .socmed-1 {margin-left: -50px; margin-right: -50px;}
+    .newsletter {margin-left: -50px; margin-right: -50px;}
 }
 
 @media only screen and (max-width: 768px) {
     .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
     .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
-    /* .info {font-size: 35px; margin-left: -50px; margin-right: -50px;}
-    .office {font-size: 25x; margin-left: -50px; margin-right: -50px;}
-    .socmed-1 {margin-left: -50px; margin-right: -50px;}  */
+    .project {font-size: 32.5px;}
+    .donation {font-size: 30px!important; width: "100px"!important; height: "45px"!important;}
+    .info {font-size: 32.5px; margin-left: -50px; margin-right: -50px;}
+    .office {font-size: 25px; margin-left: -50px; margin-right: -50px;}
+    .socmed-1 {margin-left: -50px; margin-right: -50px;}
+    .newsletter {margin-left: -50px; margin-right: -50px;}
 }
 
 @media only screen and (max-width: 600px) {
     .about {font-size: 35px; padding-left: 50px; padding-right: 50px; }
     .description {font-size: 20px; padding-left: 50px; padding-right: 50px;}
-    /* .info {font-size: 25px; padding-left: 50px; padding-right: 50px;}
-    .office {font-size: 20px; padding-left: 50px; padding-right: 50px;}
-    .socmed-1 {padding-left: 50px; padding-right: 50px;} */
+    .project {font-size: 30px;}
+    .info {font-size: 30px; margin-left: -50px; margin-right: 5-h0px;}
+    .office {font-size: 25px; margin-left: -50px; margin-right: -50px;}
+    .socmed-1 {margin-left: -50px; margin-right: -50px;}
+    .newsletter {margin-left: -50px; margin-right: -50px;}
 }
 
 

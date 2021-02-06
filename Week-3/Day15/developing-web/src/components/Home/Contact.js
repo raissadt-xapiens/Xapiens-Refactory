@@ -32,7 +32,7 @@ function Contact() {
                 <Row
                     style={{textAlign: "left"}}
                 >
-                    <Col>
+                    <Col className="sm-4 md-4 lg-4">
                         <h2
                             className="info"
                         >
@@ -51,7 +51,7 @@ function Contact() {
                             Fax +24 178 9876543
                         </h3>
                     </Col>
-                    <Col>
+                    <Col className="sm-4 md-4 lg-4">
                         <h2
                             className="info"
                         >
@@ -62,7 +62,7 @@ function Contact() {
                         <p className="socmed-1"><img className="socmed-2" src={Socmed3} alt="Instagram" /> @oipa_adopt</p>
                         <p className="socmed-1"><img className="socmed-2" src={Socmed4} alt="Twitter" /> @oipa_adopt</p>
                     </Col>
-                    <Col>
+                    <Col className="sm-4 md-4 lg-4">
                         <h2
                             className="info"
                         >
