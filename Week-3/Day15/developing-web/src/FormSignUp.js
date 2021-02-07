@@ -1,10 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import useForm from './components/Form/Function';
 import validate from './components/Form/Validation';
 import '../src/assets/styles/Sign.css';
 
 
-const Formies = () => {
+const FHSignUp = () => {
 
     const {
         values,
@@ -13,8 +14,12 @@ const Formies = () => {
         handleSubmit,
     } = useForm(login, validate);
 
+    const history = useHistory();
+
     function login() {
-        console.log('No errors, submit callback called!');
+      alert('success login');
+      // console.log('No errors, submit callback called!');
+      history.push("/");
     }
 
     
@@ -62,4 +67,4 @@ const Formies = () => {
     )
 }
 
-export default Formies;
+export default FHSignUp;

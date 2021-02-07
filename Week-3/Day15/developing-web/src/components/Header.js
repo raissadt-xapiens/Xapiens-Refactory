@@ -7,38 +7,38 @@ import {
     Nav,
     NavItem,
     NavLink,
-    Button,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-    Col
+    // Button,
+    // Modal,
+    // ModalHeader,
+    // ModalBody,
+    // ModalFooter,
+    // Form,
+    // FormGroup,
+    // Label,
+    // Input,
+    // Col
 } from 'reactstrap';
-import PhoneInput from 'react-phone-number-input';
+// import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import '../assets/styles/Header.css';
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [modal, setModal] = useState(false);
-    const [nestedModal, setNestedModal] = useState(false);
-    const [closeAll, setCloseAll] = useState(false);
-    const [value, setValue] = useState();
+    // const [modal, setModal] = useState(false);
+    // const [nestedModal, setNestedModal] = useState(false);
+    // const [closeAll, setCloseAll] = useState(false);
+    // const [value, setValue] = useState();
 
     const toggle1 = () => setIsOpen(!isOpen);
-    const toggle2 = () => setModal(!modal);
-    const toggle3 = () => {
-        setNestedModal(!nestedModal);
-        setCloseAll(false);
-    }
-    const toggleAll = () => {
-        setNestedModal(!nestedModal);
-        setCloseAll(true);
-    }
+    // const toggle2 = () => setModal(!modal);
+    // const toggle3 = () => {
+    //     setNestedModal(!nestedModal);
+    //     setCloseAll(false);
+    // }
+    // const toggleAll = () => {
+    //     setNestedModal(!nestedModal);
+    //     setCloseAll(true);
+    // }
 
     return (
         <div>
@@ -72,6 +72,24 @@ const Header = (props) => {
                         className="ml-auto"
                         navbar
                     >
+                        {/* <NavItem>
+                            <NavLink
+                                className="main-link"
+                                href="/signin"
+                                rel="noreferrer noopener"
+                            >
+                                Sign In
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className="main-link"
+                                href="/signup"
+                                rel="noreferrer noopener"
+                            >
+                                Sign Up
+                            </NavLink>
+                        </NavItem> */}
                         <NavItem>
                             <NavLink
                                 className="main-link"
@@ -100,9 +118,16 @@ const Header = (props) => {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink
+                            {/* <NavLink
                                 className="main-link"
                                 onClick={toggle2}
+                            >
+                                Account
+                            </NavLink> */}
+                            <NavLink
+                                className="main-link"
+                                href="/signin"
+                                rel="noreferer noopener"
                             >
                                 Account
                             </NavLink>
@@ -110,7 +135,7 @@ const Header = (props) => {
                     </Nav>
                 </Collapse>
             </Navbar>
-            <div>
+            {/* <div>
                 <Modal isOpen={modal} toggle={toggle2} className="pop-modal">
                     <ModalHeader toggle={toggle2} className="modal-title">Sign In</ModalHeader>
                     <ModalBody>
@@ -174,7 +199,7 @@ const Header = (props) => {
                                         <FormGroup>
                                             <Label for="phone" type="number" />
                                             <PhoneInput value={value} onChange={setValue} placeholder="Put your phone number" />
-                                            {/* <Input type="number" pattern="[0-9]+" id="examplePhoNum" placeholder="Put your phone number" />  */}
+                                            {/* <Input type="number" pattern="[0-9]+" id="examplePhoNum" placeholder="Put your phone number" />
                                         </FormGroup>
                                         </Col>
                                         <Col>
@@ -197,7 +222,7 @@ const Header = (props) => {
                         <Button type="submit" className="modal-button">Submit</Button>
                     </ModalFooter>
                 </Modal>
-            </div>
+            </div> */}
         </div>
     )
 }

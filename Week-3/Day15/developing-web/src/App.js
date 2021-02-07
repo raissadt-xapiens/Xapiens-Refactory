@@ -4,6 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import FHSignIn from '../src/FormSignIn';
+import FHSignUp from '../src/FormSignUp';
 import Landing from '../src/components/LandingPage';
 import Donation from '../src/components/DonationPage';
 import Teams from '../src/components/TeamsPage';
@@ -16,7 +18,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/teams">
+          {/* <Route path="/signup">
+            <FHSignUp />
+          </Route>
+          <Route path="/signin">
+            <FHSignIn />
+          </Route> */}
+          {/* <Route path="/landing">
+            <Landing />
+          </Route> */}
+          {/* <Route path="/teams">
             <Teams />
           </Route>
           <Route path="/projects">
@@ -28,9 +39,16 @@ function App() {
           <Route path="/donation">
             <Donation />
           </Route>
-          <Route path="/">
-            <Landing />
-          </Route>
+          <Route exact path="/">
+            <FHSignIn />
+          </Route> */}
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/signin" component={FHSignIn} />
+          <Route exact path="/signup" component={FHSignUp} />
+          <Route exact path="/teams" component={Teams} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/news" component={News} />
+          <Route exact path="/donation" component={Donation} />
         </Switch>
       </div>
     </Router>

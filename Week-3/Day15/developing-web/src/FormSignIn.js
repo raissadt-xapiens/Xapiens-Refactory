@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { NavLink } from 'reactstrap';
 import useForm from './components/Form/Function';
 import validate from './components/Form/Validation';
 import '../src/assets/styles/Sign.css';
@@ -13,8 +15,12 @@ const FHSignin = () => {
         handleSubmit,
     } = useForm(login, validate);
 
+    const history = useHistory();
+
     function login() {
-        console.log('No errors, submit callback called!');
+        alert('success login');
+        // console.log('No errors, submit callback called!');
+        history.push("/");
     }
 
     
@@ -36,8 +42,9 @@ const FHSignin = () => {
                 <span className='error'>{errors.password}</span>}
             </div>
             <div className='submit'>
-              <button type='submit'>Submit</button>
+              <button type="submit">Submit</button>
             </div>
+            <p className="register-link">Dont have an account?<NavLink href="/signup" rel="noreferer noopener" style={{color: "black", textAlign: "left", marginLeft: "-12.5px"}}>Sign Up</NavLink></p>
           </form>
         </div>
       </div>
