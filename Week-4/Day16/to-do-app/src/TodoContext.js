@@ -4,16 +4,16 @@ export const TodoContext = createContext();
 
 export const TodoProvider = (props) => {
     const [todos, setTodos] = useState([
-        {
-            "id": Date.now(),
-            "value": "Buy milk",
-            "done": false
-        },
-        {
-            "id": Date.now() + 1,
-            "value": "Play with doggy",
-            "done": false
-        }
+        // {
+        //     "id": Date.now(),
+        //     "value": "",
+        //     "done": false
+        // },
+        // {
+        //     "id": Date.now() + 1,
+        //     "value": "",
+        //     "done": false
+        // }
     ]);
     return (
         <TodoContext.Provider value={[todos, setTodos]}>
