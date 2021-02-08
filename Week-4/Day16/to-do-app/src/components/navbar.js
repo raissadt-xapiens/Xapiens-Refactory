@@ -20,7 +20,7 @@ export default function Navbar() {
     <div className="navbar has-shadow">
       <div className="navbar-brand">
         <div className="navbar-item">
-          <p className="title">Easy Todo</p>
+          <p className="title">To-Do List</p>
         </div>
 
         <a role="button" onClick={() => setMenu(!menu)} className={`navbar-burger burger ${menu ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -39,8 +39,8 @@ export default function Navbar() {
                   <input value={value} type="text" onChange={(e) => setValue(e.target.value)} className="input" />
                 </p>
                 <p className="control">
-                  <button className="button is-info has-text-weight-bold">
-                    Add Todo
+                  <button className="button is-dark has-text-weight-bold">
+                    Create New
                   </button>
                 </p>
               </form>

@@ -30,7 +30,7 @@ export default function TodoList() {
 
     return (
         <div>
-            <div className="hero is-info">
+            <div className="hero is-dark">
                 <div className="hero-body has-text-centered">
                     <p className="title is-1">{todos.length}</p>
                 </div>
