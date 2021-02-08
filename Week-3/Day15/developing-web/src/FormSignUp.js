@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import useForm from './components/Form/Function';
-import validate from './components/Form/Validation';
+import validate from './components/Form/ValidationSignUp';
 import '../src/assets/styles/Sign.css';
 
 
@@ -17,9 +17,9 @@ const FHSignUp = () => {
     const history = useHistory();
 
     function login() {
-      alert('success login');
-      // console.log('No errors, submit callback called!');
-      history.push("/");
+      alert('Sign Up success!');
+      console.log('No errors, submit callback called!');
+      history.push("/signin");
     }
 
     

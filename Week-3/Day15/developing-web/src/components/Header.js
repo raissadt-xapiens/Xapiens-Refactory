@@ -126,7 +126,7 @@ const Header = (props) => {
                             </NavLink> */}
                             <NavLink
                                 className="main-link"
-                                href="/signin"
+                                href="/"
                                 rel="noreferer noopener"
                             >
                                 Account

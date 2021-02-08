@@ -42,9 +42,9 @@ function App() {
           <Route exact path="/">
             <FHSignIn />
           </Route> */}
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/signin" component={FHSignIn} />
+          <Route exact path="/" component={FHSignIn} />
           <Route exact path="/signup" component={FHSignUp} />
+          <Route exact path="/landing" component={Landing} />
           <Route exact path="/teams" component={Teams} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/news" component={News} />
