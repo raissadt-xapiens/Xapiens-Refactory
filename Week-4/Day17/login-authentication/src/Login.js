@@ -27,7 +27,7 @@ export const Login = () => {
             isSubmitting: true,
             errorMessage: null
         });
-        fetch('http://localhost:8080/api/login', {
+        fetch('http://localhost:8080/login', {
             method: 'post',
             headers: {
                 "Content-Type": 'application/json'
