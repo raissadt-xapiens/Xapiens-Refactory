@@ -42,20 +42,20 @@ class HandlerGenerator {
           message: 'Authentication successful!',
           token: token,
           user: {
-            firstName: "Admin",
-            lastName: "User"
+            firstName: "Raissa",
+            lastName: "Desyandita"
           }
         });
       } else {
         return res.status(401).json({
           success: false,
-          message: 'Incorrect username or password'
+          message: 'Incorrect username or password!'
         });
       }
     } else {
       return res.status(400).json({
         success: false,
-        message: 'Authentication failed! Please check the request'
+        message: 'Authentication failed! Please check the request.'
       });
     }
   }

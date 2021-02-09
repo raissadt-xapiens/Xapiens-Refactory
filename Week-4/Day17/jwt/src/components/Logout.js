@@ -5,9 +5,9 @@ export default function Logout() {
 
     return (
         <div className="container">
-            <button nav-link="/dashboard">Log Out</button>
+            {/* <button onClick={handleSubmitLogout}>Log Out</button> */}
+            <button>Log Out</button>
             <br/>
-            Hahahahhaha
             {/* <button onSubmit={handleSubmitLogout}>Logout</button> */}
         </div>
     )
