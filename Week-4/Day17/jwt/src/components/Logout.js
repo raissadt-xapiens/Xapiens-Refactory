@@ -5,7 +5,8 @@ export default function Logout() {
 
     return (
         <div className="container">
-            <button>Log Out</button>
+            <button nav-link="/dashboard">Log Out</button>
+            <br/>
             Hahahahhaha
             {/* <button onSubmit={handleSubmitLogout}>Logout</button> */}
         </div>
