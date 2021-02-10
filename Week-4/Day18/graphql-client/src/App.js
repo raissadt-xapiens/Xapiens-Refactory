@@ -42,7 +42,7 @@ function App() {
                     <thead>
                       <tr>
                         <th><abbr title="ID">ID</abbr></th>
-                        <th><abbr title="Name">NAME</abbr></th>
+                        <th><abbr title="Name">FULL NAME</abbr></th>
                         <th><abbr title="Address">ADDRESS</abbr></th>
                         <th><abbr title="Number">PHONE NUMBER</abbr></th>
                         <th><abbr title="Occupacy">OCCUPACY</abbr></th>
@@ -59,6 +59,11 @@ function App() {
                         </tr>
                       ))}
                     </tbody>
+                    <tfooter>
+                      <tr>
+                        <hr/>
+                      </tr>
+                    </tfooter>
                   </table>
                 </div>
               )
