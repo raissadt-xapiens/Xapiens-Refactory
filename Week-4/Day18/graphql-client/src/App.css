@@ -12,6 +12,14 @@ h2 {
   padding-bottom: 75px;
 }
 
+h5 {
+  color: darkred;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+
 .table {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   align-content: center;

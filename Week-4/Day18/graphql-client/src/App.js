@@ -31,9 +31,9 @@ function App() {
           <Query query={queries}>
             {({ data, loading, error }) => {
               if (loading) 
-                return "Loading..."
+                return <h5>--Loading...--</h5>
               if (error) 
-                return "Error! Something went wrong!"
+                return <h5>--Error! Something went wrong!--</h5>
 
 
               return (
