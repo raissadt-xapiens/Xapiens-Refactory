@@ -12,12 +12,21 @@ const typeDefs = gql`
     address: String
     number: String
     occupacy: String
+    years: Int
   }
   # The "Query" type is special: it lists all of the available queries that
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
     lists: [List]
+  }
+
+  type Forms {
+    years: String
+  }
+
+  type Mutation {
+    updateForm(years: String): Forms
   }
 `;
 
@@ -29,6 +38,9 @@ const resolvers = {
   Query: {
     lists: () => lists,
   },
+  Mutation: {
+    updateForm: () => years,
+  }
 };
 
 // The ApolloServer constructor requires two parameters: your schema
