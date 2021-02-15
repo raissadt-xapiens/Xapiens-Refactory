@@ -1,11 +1,11 @@
 [
     {
         "id": "Africa",
-        {
+        "text": {
             "country": "Kenya",
             "description": "OIPA Kenya have been already take actions for 12 years since 1992. Some of them are campaigns from many issues from strays and hunting animals."
         },
-        {
+        "ext": {
             "country": "Nigeria",
             "description": "OIPA Nigeria have been already take actions for 8 years since 1998. Some of them are campaigns from many issues from strays and hunting animals."
         },

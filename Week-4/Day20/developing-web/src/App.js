@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import FHSignIn from '../src/FormSignIn';
 import FHSignUp from '../src/FormSignUp';
+import useToken from '../src/components/Form/useToken';
 import Landing from '../src/components/LandingPage';
 import Donation from '../src/components/DonationPage';
 import Teams from '../src/components/TeamsPage';
@@ -14,20 +15,22 @@ import News from '../src/components/NewsPage';
 import './App.css';
 
 function App() {
+  const { token, setToken } = useToken();
+
+  if(!token) {
+    return <FHSignIn setToken={setToken} />
+  }
   return (
     <Router>
       <div className="App">
         <Switch>
-          {/* <Route path="/signup">
+          <Route path="/signup">
             <FHSignUp />
           </Route>
-          <Route path="/signin">
-            <FHSignIn />
-          </Route> */}
-          {/* <Route path="/landing">
+          <Route path="/landing">
             <Landing />
-          </Route> */}
-          {/* <Route path="/teams">
+          </Route>
+          <Route path="/teams">
             <Teams />
           </Route>
           <Route path="/projects">
@@ -41,14 +44,7 @@ function App() {
           </Route>
           <Route exact path="/">
             <FHSignIn />
-          </Route> */}
-          <Route exact path="/" component={FHSignIn} />
-          <Route exact path="/signup" component={FHSignUp} />
-          <Route exact path="/landing" component={Landing} />
-          <Route exact path="/teams" component={Teams} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/news" component={News} />
-          <Route exact path="/donation" component={Donation} />
+          </Route>
         </Switch>
       </div>
     </Router>
