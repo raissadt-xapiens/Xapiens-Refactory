@@ -33,7 +33,7 @@ class AllNews extends React.Component {
             this.setState({
                 data: [
                     {
-                        title: "Can't load data!"
+                        text: "Can't load data!"
                     }
                 ]
             });
@@ -45,31 +45,31 @@ class AllNews extends React.Component {
         return (
             <Container style={{height: "auto"}}>
                 <h1 className="headline-news">2021 NEWS</h1>
-        {this.state.data.map(data => {
-            return (
-                <div key={data.id}>
-                        <CardDeck className="deck-of-news">
-                            <Card>
-                                <CardImg className="image-of-news" top width="100%" src={data.imgUrl} />
-                                <CardBody className="body-of-news">
-                                    <CardTitle className="news-title">{data.title}</CardTitle>
-                                    <CardSubtitle className="mb-2 text-muted">{data.date}</CardSubtitle>
-                                    <CardText className="news-text">{data.description}</CardText>
-                                    <br/>
-                                    <Button className="news-button">Read more</Button>
-                                </CardBody>
-                            </Card>        
-                        </CardDeck>
-                        <br/>
-                </div>
-            );
-        })}
-            <Row className="years-of-news">
-                <Col><img src={Newer} alt="Back Posts" style={{width: "30px", height: "30px"}} /> Newer Posts</Col>
-                <Col>Older Posts <img src={Older} alt="Next Posts" style={{width: "30px", height: "30px"}} /></Col>
-            </Row>
-        </Container>
-        )
+                    {this.state.data.map(data => {
+                    return (
+                        <div key={data.id}>
+                                <CardDeck className="deck-of-news">
+                                    <Card>
+                                        <CardImg className="image-of-news" top width="100%" src={data.imgUrl} />
+                                        <CardBody className="body-of-news">
+                                            <CardTitle className="news-title">{data.title}</CardTitle>
+                                            <CardSubtitle className="mb-2 text-muted">{data.date}</CardSubtitle>
+                                            <CardText className="news-text">{data.description}</CardText>
+                                            <br/>
+                                            <Button className="news-button">Read more</Button>
+                                        </CardBody>
+                                    </Card>        
+                                </CardDeck>
+                                <br/>
+                        </div>
+                    );
+                    })}
+                <Row className="years-of-news">
+                    <Col><img src={Newer} alt="Back Posts" style={{width: "30px", height: "30px"}} /> Newer Posts</Col>
+                    <Col>Older Posts <img src={Older} alt="Next Posts" style={{width: "30px", height: "30px"}} /></Col>
+                </Row>
+            </Container>
+        );
     };
 };
 

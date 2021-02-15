@@ -137,7 +137,7 @@ function AllTeams(props) {
                     <Collapse isOpen={isOpen}>
                         <Card>
                             <CardBody>
-                                OIPA Tanzania have been already take actions for 20 years since 1984. Some of them are campaigns from many issues from strays and hunting animals. 
+                                OIPA India have been already take actions for 20 years since 1984. Some of them are campaigns from many issues from strays and hunting animals. 
                                 <br/>
                                 <br/>
                                 <a className="continent-link" href="!#" noreferer noopener>Contact</a>
