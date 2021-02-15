@@ -1,0 +1,14 @@
+[
+    {
+        "description": "Projects 1",
+        "imgUrl": "https://raw.githubusercontent.com/raissadt-xapiens/Week-4/day20/developing-web/main/src/assets/images/projects1.jpg"
+    },
+    {
+        "description": "Projects 2",
+        "imgUrl": "https://raw.githubusercontent.com/raissadt-xapiens/Week-4/day20/developing-web/main/src/assets/images/projects2.jpg"
+    },
+    {
+        "description": "Projects 3",
+        "imgUrl": "https://raw.githubusercontent.com/raissadt-xapiens/Week-4/day20/developing-web/main/src/assets/images/projects3.jpg"
+    }
+]

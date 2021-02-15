@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'SimSun-ExtB';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('simsunb.woff');
+    }
+
+
+
+
+
+/* TEAMS */
+.continent-headline {
+  color: #5F5240;
+  font-family: 'SimSun-ExtB';
+  font-size: 55px;
+  margin-top: 125px;
+}
+.continent-description {
+  color: #5F5240;
+  font-family: 'SimSun-ExtB';
+  font-size: 30px;
+  text-indent: 2.5em;
+  text-align: justify;
+  line-height: 50px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.continent-join {
+  font-family: 'SimSun-ExtB';
+  font-size: 70px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 125px;
+}
+.join-img {
+  width: 30px;
+  height: 30px;
+}
+.continent-tagline {
+  color: #B3A593;
+  font-family: 'SimSun-ExtB';
+  font-size: 40px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+.continent-row {
+  color: #5F5240;
+  font-family: 'SimSun-ExtB';
+  font-size: 20px;
+  justify-content: center;
+  margin: auto;
+}
+.continent-button {
+  color: black!important;
+  background-color: #DAD6D2!important;
+  border-color: #BEB4AA!important;
+  font-size: 20px!important;
+  width: 125px;
+  margin-top: 1rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.continent-link {
+  color: black;
+  text-shadow: 2px solid black;
+  font-size: 17.5px;
+  font-style: italic;
+}
+.continent-link:hover {
+  color: #B3A593;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .continent-headline {font-size: 45px;}
+  .continent-description {font-size: 25px;}
+  .continent-join {font-size: 65px;}
+  .continent-tagline {font-size: 35px;}
+}
+
+@media only screen and (max-width: 768px) {
+  .continent-headline {font-size: 42.5px;}
+  .continent-description {font-size: 22.5px;}
+  .continent-join {font-size: 60px;}
+  .continent-tagline {font-size: 30px;}
+  .continent-row {font-size: 17.5px;}
+}
+
+@media only screen and (max-width: 600px) {
+  .continent-headline {font-size: 35px;}
+  .continent-description {font-size: 22.5px;}
+}
+
+
+
+
+/* PROJECTS */
+.proj-camp {
+  font-family: 'SimSun-ExtB';
+  font-size: 50px;
+  color: #5F5240;
+  margin: auto;
+  padding-top: 125px;
+  padding-bottom: 75px;
+}
+.carousel-projects {
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-style: dashed!important;
+}
+.list-issues {
+  font-family: 'SimSun-ExtB';
+  font-size: 20px;
+  font-style: italic;
+}
+.button-support {
+  color: #5F5240;
+  font-family: 'SimSun-ExtB';
+  font-size: 30px!important;
+  background-color: #B3A593!important;
+  border-radius: 20px!important;
+  margin: auto;
+  padding-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .proj-camp {font-size: 45px;}
+  .button-support {font-size: 25px!important;}
+}
+@media only screen and (max-width: 767px) {
+  .proj-camp {font-size: 40px;}
+  .list-issues {font-size: 17.5px;}
+  .button-support {font-size: 25px!important;}
+}
+@media only screen and (max-width: 600px) {
+  .proj-camp {font-size: 35px;}
+  .button-support {font-size: 20px!important;}
+}
+
+
+
+
+/* NEWS */
+.headline-news {
+    color: #B3A593;
+    font-family: 'SimSun-ExtB';
+    font-size: 55px;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 125px;
+    padding-bottom: 75px;
+}
+.years-of-news {
+    font-family: 'SimSun-ExtB';
+    font-size: 30px;
+    font-style: italic;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.deck-of-news {
+    font-family: 'SimSun-ExtB';
+    border-color: 1px solid #B3A593;
+    /* background-color: #B3A593; */
+}
+.body-of-news {
+    background-color: #e9e5df;
+}
+.news-title {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.news-text {
+    font-size: 20px;
+    padding-top: 20px;
+}
+.news-button {
+    font-size: 30px;
+    color: black!important;
+    background-color: #B3A593!important;
+    margin-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .headline-news {font-size: 50px;}
+    .years-of-news {font-size: 25px;}
+    .news-title {font-size: 25px;}
+    .news-text {font-size: 17.5px;}
+    .news-button {font-size: 25px;}
+}
+
+@media only screen and (max-width: 768px) {
+    .headline-news {font-size: 45px;}
+    .years-of-news {font-size: 20px;}
+    .news-title {font-size: 20px;}
+    .news-text {font-size: 15px;}
+    .news-button {font-size: 20px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .headline-news {font-size: 35px;}
+    .years-of-news {font-size: 20px;}
+    .news-title {font-size: 15px;}
+    .news-text {font-size: 12.5px;}
+    .news-button {font-size: 17.5px;}
+}
