@@ -122,10 +122,10 @@ class Vendor extends Component {
                 <Table className={classes.table}>
                   <TableHead>
                     <TableRow>
-                      <TableCell>Nama Barang</TableCell>
-                      <TableCell>Nama Produk</TableCell>
-                      <TableCell numeric>Harga</TableCell>
-                      <TableCell numeric>Jumlah Stok</TableCell>
+                      <TableCell>Nama Klub</TableCell>
+                      <TableCell>Nama Pemain</TableCell>
+                      <TableCell>Posisi</TableCell>
+                      <TableCell>Kelebihan</TableCell>
                       <TableCell>Action</TableCell>
                     </TableRow>
                   </TableHead>
@@ -134,11 +134,11 @@ class Vendor extends Component {
                       return (
                         <TableRow key={n._id}>
                           <TableCell component="th" scope="row">
-                            {n.name}
+                            {n.nama_klub}
                           </TableCell>
-                          <TableCell>{n.nama_produk}</TableCell>
-                          <TableCell numeric>Rp. {n.harga}</TableCell>
-                          <TableCell numeric>{n.jumlah_stok}</TableCell>
+                          <TableCell>{n.nama_pemain}</TableCell>
+                          <TableCell numeric>{n.posisi}</TableCell>
+                          <TableCell numeric>{n.kelebihan}</TableCell>
                           <TableCell>
                             <IconButton className={classes.button} aria-label="Edit" component='a' href={`/edit-vendor/${n._id}`}>
                               <EditIcon />

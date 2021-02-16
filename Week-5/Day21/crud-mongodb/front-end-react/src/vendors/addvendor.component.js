@@ -77,10 +77,10 @@ class AddVendor extends Component {
         const { dispatch } = this.props;
             
         let payload={
-            name: this.props.vendor.name,
-            nama_produk: this.props.vendor.nama_produk,
-            harga: this.props.vendor.harga,
-            jumlah_stok: this.props.vendor.jumlah_stok,
+            nama_klub: this.props.vendor.nama_klub,
+            nama_pemain: this.props.vendor.nama_pemain,
+            posisi: this.props.vendor.posisi,
+            kelebihan: this.props.vendor.kelebihan,
         }
 
         if(params.id){
@@ -140,43 +140,43 @@ class AddVendor extends Component {
                                     <Grid container spacing={24}>
                                         <Grid item xs={3}>
                                             <TextField
-                                                id="name"
-                                                label="Nama Barang"
+                                                id="nama_klub"
+                                                label="Nama Klub"
                                                 className={classes.textField}
-                                                value={this.props.vendor.name}
-                                                onChange={this.handleChange('name')}
+                                                value={this.props.vendor.nama_klub}
+                                                onChange={this.handleChange('nama_klub')}
                                                 margin="normal"
                                             />
                                         </Grid>
                                         <Grid item xs={3}>
                                             <TextField
-                                                id="nama_produk"
-                                                label="Nama Produk"
+                                                id="nama_pemain"
+                                                label="Nama Pemain"
                                                 className={classes.textField}
-                                                value={this.props.vendor.nama_produk}
-                                                onChange={this.handleChange('nama_produk')}
+                                                value={this.props.vendor.nama_pemain}
+                                                onChange={this.handleChange('nama_pemain')}
                                                 margin="normal"
                                             />
                                         </Grid>
                                         <Grid item xs={3}>
                                             <TextField
-                                                id="harga"
-                                                label="Harga"
+                                                id="posisi"
+                                                label="Posisi"
                                                 className={classes.textField}
-                                                value={this.props.vendor.harga}
-                                                onChange={this.handleChange('harga')}
+                                                value={this.props.vendor.posisi}
+                                                onChange={this.handleChange('posisi')}
                                                 margin="normal"
                                             />
                                         </Grid>
                                         <Grid item xs={3}>
                                             <TextField
-                                                id="jumlah_stok"
-                                                label="Jumlah Stok"
+                                                id="kelebihan"
+                                                label="Kelebihan"
                                                 multiline
                                                 rowsMax="4"
                                                 className={classes.textField}
-                                                value={this.props.vendor.jumlah_stok}
-                                                onChange={this.handleChange('jumlah_stok')}
+                                                value={this.props.vendor.kelebihan}
+                                                onChange={this.handleChange('kelebihan')}
                                                 margin="normal"
                                             />
                                         </Grid>

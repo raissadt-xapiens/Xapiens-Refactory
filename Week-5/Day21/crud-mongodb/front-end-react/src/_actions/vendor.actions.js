@@ -93,10 +93,10 @@ export function editVendorsDetails(vendor){
     return{
         type: "VENDOR_DETAIL",
         id: vendor._id,
-        name: vendor.name,
-        nama_produk: vendor.nama_produk,
-        harga: vendor.harga,
-        jumlah_stok: vendor.jumlah_stok
+        nama_klub: vendor.nama_klub,
+        nama_pemain: vendor.nama_pemain,
+        posisi: vendor.posisi,
+        kelebihan: vendor.kelebihan
     }
 }
 
