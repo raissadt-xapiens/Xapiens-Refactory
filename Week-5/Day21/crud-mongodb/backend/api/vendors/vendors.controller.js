@@ -1,6 +1,6 @@
 'use strict';
 
-const Vendor = require('../vendors/vendors.model');
+const Vendor = require('./vendors.model');
 
 
 module.exports = {
